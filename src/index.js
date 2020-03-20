@@ -1,8 +1,12 @@
 const express = require("express");
 const moment = require("moment");
 const app = express();
+const helmet = require("helmet");
 
-var jsonFile = require("../data/json/all/latest.json");
+let jsonFile = require("../data/json/all/latest.json");
+
+app.use(helmet());
+app.disable("x-powered-by");
 
 const port = process.env.PORT || 3000;
 
