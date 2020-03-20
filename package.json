@@ -1,0 +1,25 @@
+{
+  "name": "flight-tracker-api",
+  "version": "0.1.0",
+  "description": "API layer for the Aus COVID-19 Flight Tracker Project",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AusCovid19/flight-tracker-api.git"
+  },
+  "keywords": [
+    "flight",
+    "tracker",
+    "covid19",
+    "australia"
+  ],
+  "author": "Eric Jiang <ericjiang97@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AusCovid19/flight-tracker-api/issues"
+  },
+  "homepage": "https://github.com/AusCovid19/flight-tracker-api#readme"
+}
