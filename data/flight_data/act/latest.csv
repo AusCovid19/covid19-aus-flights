@@ -1,7 +1,0 @@
-airline,flight_number,origin,destination,arrival_date,symptoms_onset_date,close_contact_rows
-Virgin Australia,VA640,Sydney,Canberra,Wed 18 March 2020,Wed 1 April 2020,"3,4,5,6,7"
-Emirates,EY450,Abu Dhabi,Sydney,Wed 18 March 2020,Wed 1 April 2020,"42,43,44,45,46"
-Emirates,EY78,Amsterdam,Abu Dhabi,Tue 17 March 2020,Tue 31 March 2020,
-Qantas,QF94,Los Angeles,Melbourne,Tue 17 March 2020,Tue 31 March 2020,"71,72,73,74,75"
-Qantas,QF2130,Melbourne,Canberra,Tue 17 March 2020,Tue 31 March 2020,"15,16,17,18,19"
-Garuda Indonesia,GA712,Jakarta,Sydney,Sat 14 March 2020,Sat 28 March 2020,"41,42,43,44,45"
