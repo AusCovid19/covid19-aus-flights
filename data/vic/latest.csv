@@ -1,0 +1,12 @@
+airline,flight_number,origin,destination,arrival_date,symptoms_onset_date,close_contact_rows
+Emirates,EK0406,Dubai,Melbourne,Tue 10 March 2020,Tue 24 March 2020,
+Qantas,QF430,Melbourne,Sydney,Mon 9 March 2020,Mon 23 March 2020,
+Qantas,QF459,Sydney,Melbourne,Mon 9 March 2020,Mon 23 March 2020,
+Virgin Australia,VA24,Los Angeles,Melbourne,Sun 8 March 2020,Sun 22 March 2020,
+Malaysia Airways,MH0149,Kuala Lumpur,Melbourne,Fri 6 March 2020,Fri 20 March 2020,
+Qantas,QF94,Los Angeles,Melbourne,Fri 6 March 2020,Fri 20 March 2020,
+Emirates,EK404,Singapore,Melbourne,Fri 6 March 2020,Fri 20 March 2020,
+Virgin Australia,VA682,Perth,Melbourne,Mon 2 March 2020,Mon 16 March 2020,
+United Airlines,UA60,San Francisco,Melbourne,Sat 29 February 2020,Sat 14 March 2020,
+Singapore Airlines,SQ237,Singapore,Melbourne,Sat 29 February 2020,Sat 14 March 2020,
+Molinda Air,OD177,Denpasar,Melbourne,Fri 28 February 2020,Fri 13 March 2020,
