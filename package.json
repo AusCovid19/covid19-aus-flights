@@ -4,6 +4,7 @@
   "description": "API layer for the Aus COVID-19 Flight Tracker Project",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/AusCovid19/flight-tracker-api/issues"
   },
-  "homepage": "https://github.com/AusCovid19/flight-tracker-api#readme"
+  "homepage": "https://github.com/AusCovid19/flight-tracker-api#readme",
+  "dependencies": {
+    "csv-parser": "^2.3.2",
+    "express": "^4.17.1"
+  }
 }
