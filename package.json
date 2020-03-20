@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/AusCovid19/flight-tracker-api#readme",
   "dependencies": {
-    "csv-parser": "^2.3.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "moment": "^2.24.0"
   }
 }
