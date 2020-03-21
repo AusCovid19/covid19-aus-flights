@@ -16,7 +16,7 @@ jobs:
       - name: Build Frontend
         run: cd frontend && npm install && npm run build
       - name: Copy Static Build
-        run: cd .. && cp -r ./frontend/build/ ./build/
+        run: cp -r ./frontend/build/ ./build/
       - name: Setup Google Cloud SDK
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
