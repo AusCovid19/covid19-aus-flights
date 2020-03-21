@@ -3,8 +3,19 @@ const moment = require("moment");
 const path = require("path");
 const app = express();
 const helmet = require("helmet");
+const fuse = require("fuse.js");
 
 let jsonFile = require("./data/json/all/latest.json");
+
+const search = new fuse(jsonFile, {
+  keys: [
+    { name: "destination", weight: 0.9 },
+    { name: "origin", weight: 0.7 },
+    { name: "airline", weight: 0.6 },
+    { name: "flight_number", weight: 0.6 },
+    { name: "reporting_state", weight: 0.4 }
+  ]
+});
 
 app.use(helmet());
 app.use(express.static(path.join(__dirname, "build")));
@@ -37,6 +48,10 @@ app.get("/api", (req, res) => {
   }
 
   return res.send(jsonFile);
+});
+
+app.get("/api/search", (req, res) => {
+  return res.send(search.search(req.query.query).map(item => item.item));
 });
 
 app.get("/*", function(req, res) {

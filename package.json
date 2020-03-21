@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "develop": "concurrently 'node index.js' 'cd frontend && npm run start'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,8 +25,10 @@
   },
   "homepage": "https://github.com/AusCovid19/flight-tracker-api#readme",
   "dependencies": {
+    "concurrently": "^5.1.0",
     "evergreen-ui": "^4.23.3",
     "express": "^4.17.1",
+    "fuse.js": "^5.0.7-beta",
     "helmet": "^3.21.3",
     "moment": "^2.24.0"
   }

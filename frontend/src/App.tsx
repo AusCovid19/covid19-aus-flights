@@ -6,13 +6,20 @@ import {
   Heading,
   Table,
   TextDropdownButton,
-  Link
+  Link,
+  SearchInput
 } from "evergreen-ui";
 import { useApi } from "./hooks/useApi";
 import AirlineTail from "./airlines/AirlineTail";
 
 function App() {
-  const { isLoading, data, toggleArrivalDateSort, arrivalDateSort } = useApi();
+  const {
+    isLoading,
+    data,
+    toggleArrivalDateSort,
+    arrivalDateSort,
+    handleSearch
+  } = useApi();
   return (
     <div style={{ maxHeight: "100vh" }}>
       <Pane display="flex" padding={16} background="tint2" borderRadius={3}>
@@ -38,14 +45,24 @@ function App() {
         flexDirection="column"
         flex={1}
       >
-        {isLoading && (
-          <>
-            <Spinner />
-            <Text>Loading...</Text>
-          </>
-        )}
-        {!isLoading && (
-          <Table width="80%" flex={1}>
+        <Pane width="80%">
+          <Pane
+            border="default"
+            width="100%"
+            marginBottom={20}
+            padding={16}
+            display="flex"
+            flexDirection="column"
+          >
+            <SearchInput
+              placeholder="Search (i.e. Flight Destination, Origin, Airline, Flight Number)"
+              onChange={(e: any) => {
+                handleSearch(e.target.value as string);
+              }}
+              width="100%"
+            />
+          </Pane>
+          <Table width="100%" flex={1}>
             <Table.Head>
               <Table.TextHeaderCell>Airline</Table.TextHeaderCell>
               <Table.TextHeaderCell>Flight Number</Table.TextHeaderCell>
@@ -55,7 +72,10 @@ function App() {
                 <TextDropdownButton
                   onClick={() => toggleArrivalDateSort()}
                   icon={
-                    arrivalDateSort === "ascending" ? "arrow-up" : "arrow-down"
+                    arrivalDateSort === "ascending" ||
+                    arrivalDateSort === "none"
+                      ? "arrow-up"
+                      : "arrow-down"
                   }
                 >
                   Flight Arrival Date
@@ -68,6 +88,19 @@ function App() {
               <Table.TextHeaderCell>State Reporting</Table.TextHeaderCell>
             </Table.Head>
             <Table.Body height="60vh">
+              {isLoading && (
+                <Pane
+                  display="flex"
+                  flexDirection="column"
+                  flex={1}
+                  justifyContent="center"
+                  alignItems="center"
+                  marginTop="1rem"
+                >
+                  <Spinner />
+                  <Text>Loading...</Text>
+                </Pane>
+              )}
               {data.map((flight, i) => {
                 return (
                   <Table.Row key={i}>
@@ -93,7 +126,7 @@ function App() {
               })}
             </Table.Body>
           </Table>
-        )}
+        </Pane>
       </Pane>
       <Pane
         display="flex"
