@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/AusCovid19/flight-tracker-api#readme",
   "dependencies": {
+    "evergreen-ui": "^4.23.3",
     "express": "^4.17.1",
     "helmet": "^3.21.3",
     "moment": "^2.24.0"

@@ -8,9 +8,9 @@ let jsonFile = require("../data/json/all/latest.json");
 app.use(helmet());
 app.disable("x-powered-by");
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   let { reporting_state, before_arrival_date, after_arrival_date } = req.query;
 
   if (reporting_state) {
