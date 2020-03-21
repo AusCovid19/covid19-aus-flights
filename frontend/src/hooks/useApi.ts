@@ -14,24 +14,25 @@ export const useApi = () => {
     return new Promise(resolve => setTimeout(resolve, ms));
   };
 
+  const getData = async () => {
+    await timeout(1500);
+    const data: FlightsResponse[] = await fetch("/api").then(resp =>
+      resp.json()
+    );
+
+    const newData: Flight[] = data.map(flight => {
+      return {
+        ...flight,
+        arrival_date: moment(new Date(flight.arrival_date)),
+        symptoms_onset_date: moment(new Date(flight.symptoms_onset_date))
+      };
+    });
+    setData(newData);
+    setIsLoading(false);
+  };
+
   useEffect(() => {
     setIsLoading(true);
-    async function getData() {
-      await timeout(2000);
-      const data: FlightsResponse[] = await fetch("/api").then(resp =>
-        resp.json()
-      );
-
-      const newData: Flight[] = data.map(flight => {
-        return {
-          ...flight,
-          arrival_date: moment(new Date(flight.arrival_date)),
-          symptoms_onset_date: moment(new Date(flight.symptoms_onset_date))
-        };
-      });
-      setData(newData);
-      setIsLoading(false);
-    }
     getData();
   }, []);
 
@@ -59,11 +60,23 @@ export const useApi = () => {
     }
   };
 
+  const searchByDestCity = (city: string) => {
+    if (city !== "") {
+      const flightData = [...data].filter(flight => {
+        return flight.destination === city;
+      });
+      setData(flightData);
+    } else {
+      getData();
+    }
+  };
+
   return {
     isLoading,
     data,
     arrivalDateSort,
     sortByArrivalDate,
-    toggleArrivalDateSort
+    toggleArrivalDateSort,
+    searchByDestCity
   };
 };

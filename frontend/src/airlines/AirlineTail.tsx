@@ -16,6 +16,10 @@ import CX from "./CX.png";
 import MH from "./MH.png";
 import TG from "./TG.png";
 import PR from "./PR.png";
+import VA from "./VA.png";
+import BA from "./BA.png";
+import AA from "./AA.png";
+import OD from "./OD.png";
 
 const height = 25;
 
@@ -46,13 +50,24 @@ const AirlineTail: React.FC<{ airline: string }> = ({ airline }) => {
       return <img src={KE} height={height} alt={airline} />;
     case "Cathay":
       return <img src={CX} height={height} alt={airline} />;
+    case "Malaysia":
     case "Malaysian":
       return <img src={MH} height={height} alt={airline} />;
+    case "Philippine":
     case "Phillippine":
     case "Phillippines":
       return <img src={PR} height={height} alt={airline} />;
     case "Thai":
       return <img src={TG} height={height} alt={airline} />;
+    case "Virgin":
+      return <img src={VA} height={height} alt={airline} />;
+    case "British":
+      return <img src={BA} height={height} alt={airline} />;
+    case "American":
+      return <img src={AA} height={height} alt={airline} />;
+    case "Malindo":
+    case "Molinda":
+      return <img src={OD} height={height} alt={airline} />;
   }
   switch (airline) {
     case "Air New Zealand":

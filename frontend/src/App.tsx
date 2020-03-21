@@ -1,9 +1,20 @@
 import React from "react";
-import { Pane, Button, Spinner, Text, Heading, Table } from "evergreen-ui";
+import {
+  Pane,
+  Button,
+  Spinner,
+  Text,
+  Heading,
+  Table,
+  TextDropdownButton
+} from "evergreen-ui";
 import { useApi } from "./hooks/useApi";
 import AirlineTail from "./airlines/AirlineTail";
+import { useState } from "react";
 
 function App() {
+  const [searchDestMode, setSearchDestMode] = useState(false);
+
   const { isLoading, data, toggleArrivalDateSort, arrivalDateSort } = useApi();
   return (
     <div style={{ maxHeight: "100vh" }}>
@@ -37,21 +48,23 @@ function App() {
               <Table.TextHeaderCell>Flight Number</Table.TextHeaderCell>
               <Table.TextHeaderCell>Flight Origin</Table.TextHeaderCell>
               <Table.TextHeaderCell>Flight Destination</Table.TextHeaderCell>
-              <Table.TextHeaderCell
-                onClick={() => toggleArrivalDateSort()}
-                icon={
-                  arrivalDateSort === "ascending" ? "caret-up" : "caret-down"
-                }
-              >
-                Flight Arrival Date
-              </Table.TextHeaderCell>
+              <Table.HeaderCell>
+                <TextDropdownButton
+                  onClick={() => toggleArrivalDateSort()}
+                  icon={
+                    arrivalDateSort === "ascending" ? "arrow-up" : "arrow-down"
+                  }
+                >
+                  Flight Arrival Date
+                </TextDropdownButton>
+              </Table.HeaderCell>
               <Table.TextHeaderCell>Symptoms Onset Date</Table.TextHeaderCell>
               <Table.TextHeaderCell flexBasis={300} flexShrink={0} flexGrow={0}>
                 Flight Rows (Close Contact)
               </Table.TextHeaderCell>
               <Table.TextHeaderCell>State Reporting</Table.TextHeaderCell>
             </Table.Head>
-            <Table.Body height="40vh">
+            <Table.Body height="60vh">
               {data.map((flight, i) => {
                 return (
                   <Table.Row key={i}>
