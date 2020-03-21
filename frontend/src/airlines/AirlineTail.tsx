@@ -46,8 +46,6 @@ const AirlineTail: React.FC<{ airline: string }> = ({ airline }) => {
       return <img src={KE} height={height} alt={airline} />;
     case "Cathay":
       return <img src={CX} height={height} alt={airline} />;
-    case "Korean":
-      return <img src={KE} height={height} alt={airline} />;
     case "Malaysian":
       return <img src={MH} height={height} alt={airline} />;
     case "Phillippine":
