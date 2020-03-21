@@ -21,6 +21,8 @@ import BA from "./BA.png";
 import AA from "./AA.png";
 import OD from "./OD.png";
 import DL from "./DL.png";
+import AC from "./AC.png";
+import CI from "./CI.png";
 
 const height = 25;
 
@@ -75,6 +77,10 @@ const AirlineTail: React.FC<{ airline: string }> = ({ airline }) => {
   switch (airline) {
     case "Air New Zealand":
       return <img src={NZ} height={height} alt={airline} />;
+    case "Air Canada":
+      return <img src={AC} height={height} alt={airline} />;
+    case "China Airlines":
+      return <img src={CI} height={height} alt={airline} />;
     default:
       return null;
   }
