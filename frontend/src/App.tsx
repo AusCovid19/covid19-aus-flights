@@ -1,9 +1,10 @@
 import React from "react";
 import { Pane, Button, Spinner, Text, Heading, Table } from "evergreen-ui";
 import { useApi } from "./hooks/useApi";
+import AirlineTail from "./airlines/AirlineTail";
 
 function App() {
-  const { isLoading, data } = useApi();
+  const { isLoading, data, toggleArrivalDateSort, arrivalDateSort } = useApi();
   return (
     <div style={{ maxHeight: "100vh" }}>
       <Pane display="flex" padding={16} background="tint2" borderRadius={3}>
@@ -36,7 +37,14 @@ function App() {
               <Table.TextHeaderCell>Flight Number</Table.TextHeaderCell>
               <Table.TextHeaderCell>Flight Origin</Table.TextHeaderCell>
               <Table.TextHeaderCell>Flight Destination</Table.TextHeaderCell>
-              <Table.TextHeaderCell>Flight Arrival Date</Table.TextHeaderCell>
+              <Table.TextHeaderCell
+                onClick={() => toggleArrivalDateSort()}
+                icon={
+                  arrivalDateSort === "ascending" ? "caret-up" : "caret-down"
+                }
+              >
+                Flight Arrival Date
+              </Table.TextHeaderCell>
               <Table.TextHeaderCell>Symptoms Onset Date</Table.TextHeaderCell>
               <Table.TextHeaderCell flexBasis={300} flexShrink={0} flexGrow={0}>
                 Flight Rows (Close Contact)
@@ -47,7 +55,10 @@ function App() {
               {data.map((flight, i) => {
                 return (
                   <Table.Row key={i}>
-                    <Table.TextCell>{flight.airline}</Table.TextCell>
+                    <Table.Cell>
+                      <AirlineTail airline={flight.airline} />{" "}
+                      <Text>{flight.airline}</Text>
+                    </Table.Cell>
                     <Table.TextCell>{flight.flight_number}</Table.TextCell>
                     <Table.TextCell>{flight.origin}</Table.TextCell>
                     <Table.TextCell>{flight.destination}</Table.TextCell>

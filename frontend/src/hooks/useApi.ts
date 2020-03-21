@@ -2,13 +2,18 @@ import { useState, useEffect } from "react";
 import moment from "moment";
 import { Flight, FlightsResponse } from "../types";
 
+export type Order = "ascending" | "descending" | "none";
+
 export const useApi = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState<Flight[]>([]);
 
+  const [arrivalDateSort, setArrivalDateSort] = useState<Order>("none");
+
   const timeout = async (ms: number) => {
     return new Promise(resolve => setTimeout(resolve, ms));
   };
+
   useEffect(() => {
     setIsLoading(true);
     async function getData() {
@@ -30,5 +35,35 @@ export const useApi = () => {
     getData();
   }, []);
 
-  return { isLoading, data };
+  const sortByArrivalDate = (order: Order) => {
+    if (order === "ascending") {
+      const flightData = [...data].sort((a, b) => {
+        return a.arrival_date.isBefore(moment(b.arrival_date)) ? 1 : -1;
+      });
+      setData(flightData);
+    } else if (order === "descending") {
+      const flightData = [...data].sort((a, b) => {
+        return a.arrival_date.isBefore(moment(b.arrival_date)) ? -1 : 1;
+      });
+      setData(flightData);
+    }
+  };
+
+  const toggleArrivalDateSort = () => {
+    if (arrivalDateSort === "ascending") {
+      sortByArrivalDate("descending");
+      setArrivalDateSort("descending");
+    } else {
+      sortByArrivalDate("ascending");
+      setArrivalDateSort("ascending");
+    }
+  };
+
+  return {
+    isLoading,
+    data,
+    arrivalDateSort,
+    sortByArrivalDate,
+    toggleArrivalDateSort
+  };
 };
