@@ -1,20 +1,17 @@
 import React from "react";
 import {
   Pane,
-  Button,
   Spinner,
   Text,
   Heading,
   Table,
-  TextDropdownButton
+  TextDropdownButton,
+  Link
 } from "evergreen-ui";
 import { useApi } from "./hooks/useApi";
 import AirlineTail from "./airlines/AirlineTail";
-import { useState } from "react";
 
 function App() {
-  const [searchDestMode, setSearchDestMode] = useState(false);
-
   const { isLoading, data, toggleArrivalDateSort, arrivalDateSort } = useApi();
   return (
     <div style={{ maxHeight: "100vh" }}>
@@ -24,8 +21,14 @@ function App() {
         </Pane>
         <Pane>
           {/* Below you can see the marginRight property on a Button. */}
-          <Button marginRight={16}>Button</Button>
-          <Button appearance="primary">Primary Button</Button>
+          <Link
+            appearance="primary"
+            href="https://paypal.me/lorderikir"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Donate to keep the service alive
+          </Link>
         </Pane>
       </Pane>
       <Pane
@@ -92,7 +95,51 @@ function App() {
           </Table>
         )}
       </Pane>
-      <Pane>Footer</Pane>
+      <Pane
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        flexDirection="column"
+        flex={1}
+      >
+        <Pane alignItems="left" width="80%" marginTop={"0.25rem"}>
+          <Text>
+            Data Sourced from{" "}
+            <a href="https://www.health.nsw.gov.au/Infectious/diseases/Pages/coronavirus-flights.aspx">
+              NSW Department of Health
+            </a>
+            ,{" "}
+            <a href="https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/health+topics/health+topics+a+-+z/covid+2019/latest+updates/known+flights+with+confirmed+cases+of+covid-19">
+              SA Department of Health
+            </a>
+            ,{" "}
+            <a href="https://healthywa.wa.gov.au/Articles/A_E/Coronavirus/Locations-visited-by-confirmed-cases">
+              WA Department of Health
+            </a>
+            . In addition to media releases by{" "}
+            <a href="https://www.health.act.gov.au/about-our-health-system/novel-coronavirus-covid-19/latest-news">
+              ACT Department of Health
+            </a>{" "}
+            and{" "}
+            <a href="https://www2.health.vic.gov.au/about/media-centre/mediareleases">
+              Victorian Department of Health and Human Services.
+            </a>
+          </Text>
+        </Pane>
+        <Pane alignItems width="80%" marginTop="1.25rem">
+          <Text marginBottom={"0.25rem"}>
+            Copyright &copy; Eric Jiang 2020. Made with{" "}
+            <span role="img" aria-label="love">
+              ❤️
+            </span>{" "}
+            and{" "}
+            <span role="img" aria-label="coffee">
+              ☕
+            </span>{" "}
+            in Melbourne, Victoria, Australia.
+          </Text>
+        </Pane>
+      </Pane>
     </div>
   );
 }

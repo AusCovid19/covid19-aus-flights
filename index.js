@@ -1,11 +1,13 @@
 const express = require("express");
 const moment = require("moment");
+const path = require("path");
 const app = express();
 const helmet = require("helmet");
 
-let jsonFile = require("../data/json/all/latest.json");
+let jsonFile = require("./data/json/all/latest.json");
 
 app.use(helmet());
+app.use(express.static(path.join(__dirname, "build")));
 app.disable("x-powered-by");
 
 const port = process.env.PORT || 4000;
@@ -35,6 +37,10 @@ app.get("/api", (req, res) => {
   }
 
   return res.send(jsonFile);
+});
+
+app.get("/*", function(req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
