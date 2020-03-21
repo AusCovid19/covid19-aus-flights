@@ -1,28 +1,30 @@
 import React from "react";
 
-import QF from "./QF.png";
-import SQ from "./SQ.png";
-import GA from "./GA.png";
-import JQ from "./JQ.png";
+import AA from "./AA.png";
+import AC from "./AC.png";
+import BA from "./BA.png";
+import BI from "./BI.png";
 import CEBU from "./5J.png";
+import CI from "./CI.png";
+import CX from "./CX.png";
+import DL from "./DL.png";
 import EK from "./EK.png";
 import EY from "./EY.png";
-import TR from "./TR.png";
-import QR from "./QR.png";
-import UA from "./UA.png";
-import NZ from "./NZ.png";
+import GA from "./GA.png";
+import JQ from "./JQ.png";
 import KE from "./KE.png";
-import CX from "./CX.png";
+import LA from "./LA.png";
 import MH from "./MH.png";
-import TG from "./TG.png";
-import PR from "./PR.png";
-import VA from "./VA.png";
-import BA from "./BA.png";
-import AA from "./AA.png";
+import NZ from "./NZ.png";
 import OD from "./OD.png";
-import DL from "./DL.png";
-import AC from "./AC.png";
-import CI from "./CI.png";
+import PR from "./PR.png";
+import QF from "./QF.png";
+import QR from "./QR.png";
+import SQ from "./SQ.png";
+import TG from "./TG.png";
+import TR from "./TR.png";
+import UA from "./UA.png";
+import VA from "./VA.png";
 
 const height = 25;
 
@@ -70,6 +72,9 @@ const AirlineTail: React.FC<{ airline: string }> = ({ airline }) => {
       return <img src={AA} height={height} alt={airline} />;
     case "Delta":
       return <img src={DL} height={height} alt={airline} />;
+    case "LATAM":
+    case "Latam":
+      return <img src={LA} height={height} alt={airline} />;
     case "Malindo":
     case "Molinda":
       return <img src={OD} height={height} alt={airline} />;
@@ -79,6 +84,8 @@ const AirlineTail: React.FC<{ airline: string }> = ({ airline }) => {
       return <img src={NZ} height={height} alt={airline} />;
     case "Air Canada":
       return <img src={AC} height={height} alt={airline} />;
+    case "Royal Brunei Airlines":
+      return <img src={BI} height={height} alt={airline} />;
     case "China Airlines":
       return <img src={CI} height={height} alt={airline} />;
     default:
