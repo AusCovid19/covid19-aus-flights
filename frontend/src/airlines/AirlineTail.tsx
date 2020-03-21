@@ -20,6 +20,7 @@ import VA from "./VA.png";
 import BA from "./BA.png";
 import AA from "./AA.png";
 import OD from "./OD.png";
+import DL from "./DL.png";
 
 const height = 25;
 
@@ -65,6 +66,8 @@ const AirlineTail: React.FC<{ airline: string }> = ({ airline }) => {
       return <img src={BA} height={height} alt={airline} />;
     case "American":
       return <img src={AA} height={height} alt={airline} />;
+    case "Delta":
+      return <img src={DL} height={height} alt={airline} />;
     case "Malindo":
     case "Molinda":
       return <img src={OD} height={height} alt={airline} />;
