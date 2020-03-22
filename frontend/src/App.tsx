@@ -12,9 +12,12 @@ import {
   TableRow,
   Typography
 } from "@material-ui/core";
-import useAppStyles from "./AppStyles";
+
 import Footer from "./components/Footer";
 import ApplicationBar from "./components/AppBar/AppBar";
+
+import { grey } from "@material-ui/core/colors";
+import useAppStyles from "./AppStyles";
 
 function App() {
   const {
@@ -42,13 +45,13 @@ function App() {
         <div style={{ width: "80%", maxWidth: "800", flex: 1 }}>
           <TableContainer style={{ maxHeight: "70vh" }}>
             <Table stickyHeader>
-              <TableHead>
+              <TableHead style={{ backgroundColor: grey[300] }}>
                 <TableCell>Airline</TableCell>
                 <TableCell>Flight Number</TableCell>
                 <TableCell>Origin</TableCell>
                 <TableCell>Destination</TableCell>
                 <TableCell>Arrival Date</TableCell>
-                <TableCell>Symptoms Onset Date</TableCell>
+                <TableCell>Symptoms Onset up to:</TableCell>
                 <TableCell>Flight Rows (Close Contact)</TableCell>
                 <TableCell>Reporting State</TableCell>
               </TableHead>
@@ -86,10 +89,10 @@ function App() {
                       <TableCell>{flight.origin}</TableCell>
                       <TableCell>{flight.destination}</TableCell>
                       <TableCell>
-                        {flight.arrival_date.format("Do MMM YYYY")}
+                        {flight.arrival_date.format("D MMM YYYY")}
                       </TableCell>
                       <TableCell>
-                        {flight.symptoms_onset_date.format("Do MMM YYYY")}
+                        {flight.symptoms_onset_date.format("D MMM YYYY")}
                       </TableCell>
                       <TableCell>{flight.close_contact_rows}</TableCell>
                       <TableCell>{flight.reporting_state}</TableCell>
