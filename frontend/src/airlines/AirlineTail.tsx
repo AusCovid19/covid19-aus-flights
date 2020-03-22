@@ -29,7 +29,7 @@ import VA from "./VA.png";
 const height = 15;
 
 const AirlineTail: React.FC<{ airline: string }> = ({ airline }) => {
-  switch (airline.split(" ")[0]) {
+  switch (airline.split("/")[0].split(" ")[0]) {
     case "QANTAS":
     case "Qantas":
       return <img src={QF} height={height} alt={airline} />;

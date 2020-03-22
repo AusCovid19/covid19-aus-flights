@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Fuse from "fuse.js";
 import moment from "moment";
 import { Flight, FlightsResponse } from "../types";
 
@@ -8,7 +7,7 @@ export type Order = "ascending" | "descending" | "none";
 export const useApi = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState<Flight[]>([]);
-  const [results, setResults] = useState<Flight[]>([]);
+  // const [results, setResults] = useState<Flight[]>([]);
 
   const [arrivalDateSort, setArrivalDateSort] = useState<Order>("none");
 
