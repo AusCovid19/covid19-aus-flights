@@ -26,7 +26,7 @@ import TR from "./TR.png";
 import UA from "./UA.png";
 import VA from "./VA.png";
 
-const height = 25;
+const height = 15;
 
 const AirlineTail: React.FC<{ airline: string }> = ({ airline }) => {
   switch (airline.split(" ")[0]) {

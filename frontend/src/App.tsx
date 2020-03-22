@@ -1,16 +1,26 @@
 import React from "react";
-import {
-  Pane,
-  Spinner,
-  Text,
-  Heading,
-  Table,
-  TextDropdownButton,
-  Link,
-  SearchInput
-} from "evergreen-ui";
+
 import { useApi } from "./hooks/useApi";
 import AirlineTail from "./airlines/AirlineTail";
+import {
+  CircularProgress,
+  IconButton,
+  InputBase,
+  Link,
+  Table,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableBody,
+  TableRow,
+  AppBar,
+  Toolbar,
+  Typography
+} from "@material-ui/core";
+import SearchIcon from "@material-ui/icons/Search";
+import { grey } from "@material-ui/core/colors";
+import useAppStyles from "./AppStyles";
+import GitHubIcon from "./icons/GitHub.js";
 
 function App() {
   const {
@@ -20,147 +30,160 @@ function App() {
     arrivalDateSort,
     handleSearch
   } = useApi();
+
+  const classes = useAppStyles();
   return (
     <div style={{ maxHeight: "100vh" }}>
-      <Pane display="flex" padding={16} background="tint2" borderRadius={3}>
-        <Pane flex={1} alignItems="center" display="flex">
-          <Heading size={600}>COVID-19 Australian Flight Tracker</Heading>
-        </Pane>
-        <Pane>
-          {/* Below you can see the marginRight property on a Button. */}
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" noWrap>
+            COVID-19 Australian Flight Tracker
+          </Typography>
+          <div className={classes.search}>
+            <div className={classes.searchIcon}>
+              <SearchIcon />
+            </div>
+            <InputBase
+              placeholder="Search (i.e. Flight Destination, Origin, Airline, Flight Number)"
+              classes={{
+                root: classes.inputRoot,
+                input: classes.inputInput
+              }}
+              inputProps={{ "aria-label": "search" }}
+              onChange={(e: any) => {
+                handleSearch(e.target.value as string);
+              }}
+            />
+          </div>
+          <div className={classes.grow} />
+          <div>
+            <IconButton
+              aria-label="show more"
+              aria-haspopup="true"
+              color="inherit"
+            >
+              <GitHubIcon />
+            </IconButton>
+          </div>
+        </Toolbar>
+      </AppBar>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+          flex: 1,
+          marginTop: "1rem"
+        }}
+      >
+        <div style={{ width: "80%", maxWidth: "800", flex: 1 }}>
+          <TableContainer style={{ maxHeight: "80vh" }}>
+            <Table stickyHeader>
+              <TableHead>
+                <TableCell>Airline</TableCell>
+                <TableCell>Flight Number</TableCell>
+                <TableCell>Origin</TableCell>
+                <TableCell>Destination</TableCell>
+                <TableCell>Arrival Date</TableCell>
+                <TableCell>Symptoms Onset Date</TableCell>
+                <TableCell>Flight Rows (Close Contact)</TableCell>
+                <TableCell>Reporting State</TableCell>
+              </TableHead>
+              <TableBody>
+                {isLoading && (
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      flex: 1,
+                      justifyContent: "center",
+                      alignItems: "center",
+                      marginTop: "1rem"
+                    }}
+                  >
+                    <CircularProgress />
+                    <Typography>Loading...</Typography>
+                  </div>
+                )}
+                {data.map((flight, i) => {
+                  return (
+                    <TableRow key={i}>
+                      <TableCell>
+                        <div style={{ display: "flex" }}>
+                          <AirlineTail airline={flight.airline} />{" "}
+                          <Typography
+                            variant="body2"
+                            style={{ marginLeft: 10 }}
+                          >
+                            {flight.airline}
+                          </Typography>
+                        </div>
+                      </TableCell>
+                      <TableCell>{flight.flight_number}</TableCell>
+                      <TableCell>{flight.origin}</TableCell>
+                      <TableCell>{flight.destination}</TableCell>
+                      <TableCell>
+                        {flight.arrival_date.format("Do MMM YYYY")}
+                      </TableCell>
+                      <TableCell>
+                        {flight.symptoms_onset_date.format("Do MMM YYYY")}
+                      </TableCell>
+                      <TableCell>{flight.close_contact_rows}</TableCell>
+                      <TableCell>{flight.reporting_state}</TableCell>
+                    </TableRow>
+                  );
+                })}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+          flex: 1,
+          background: grey[900],
+          color: "white"
+        }}
+      >
+        <div style={{ alignItems: "left", width: "80%", marginTop: "0.25rem" }}>
           <Link
-            appearance="primary"
+            color="primary"
             href="https://paypal.me/lorderikir"
             target="_blank"
             rel="noreferrer noopener"
           >
             Donate to keep the service alive
           </Link>
-        </Pane>
-      </Pane>
-      <Pane
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        flexDirection="column"
-        flex={1}
-      >
-        <Pane width="80%">
-          <Pane
-            border="default"
-            width="100%"
-            marginBottom={20}
-            padding={16}
-            display="flex"
-            flexDirection="column"
-          >
-            <SearchInput
-              placeholder="Search (i.e. Flight Destination, Origin, Airline, Flight Number)"
-              onChange={(e: any) => {
-                handleSearch(e.target.value as string);
-              }}
-              width="100%"
-            />
-          </Pane>
-          <Table width="100%" flex={1}>
-            <Table.Head>
-              <Table.TextHeaderCell>Airline</Table.TextHeaderCell>
-              <Table.TextHeaderCell>Flight Number</Table.TextHeaderCell>
-              <Table.TextHeaderCell>Flight Origin</Table.TextHeaderCell>
-              <Table.TextHeaderCell>Flight Destination</Table.TextHeaderCell>
-              <Table.HeaderCell>
-                <TextDropdownButton
-                  onClick={() => toggleArrivalDateSort()}
-                  icon={
-                    arrivalDateSort === "ascending" ||
-                    arrivalDateSort === "none"
-                      ? "arrow-up"
-                      : "arrow-down"
-                  }
-                >
-                  Flight Arrival Date
-                </TextDropdownButton>
-              </Table.HeaderCell>
-              <Table.TextHeaderCell>Symptoms Onset Date</Table.TextHeaderCell>
-              <Table.TextHeaderCell flexBasis={300} flexShrink={0} flexGrow={0}>
-                Flight Rows (Close Contact)
-              </Table.TextHeaderCell>
-              <Table.TextHeaderCell>State Reporting</Table.TextHeaderCell>
-            </Table.Head>
-            <Table.Body height="60vh">
-              {isLoading && (
-                <Pane
-                  display="flex"
-                  flexDirection="column"
-                  flex={1}
-                  justifyContent="center"
-                  alignItems="center"
-                  marginTop="1rem"
-                >
-                  <Spinner />
-                  <Text>Loading...</Text>
-                </Pane>
-              )}
-              {data.map((flight, i) => {
-                return (
-                  <Table.Row key={i}>
-                    <Table.Cell>
-                      <AirlineTail airline={flight.airline} />{" "}
-                      <Text>{flight.airline}</Text>
-                    </Table.Cell>
-                    <Table.TextCell>{flight.flight_number}</Table.TextCell>
-                    <Table.TextCell>{flight.origin}</Table.TextCell>
-                    <Table.TextCell>{flight.destination}</Table.TextCell>
-                    <Table.TextCell>
-                      {flight.arrival_date.format("Do MMM YYYY")}
-                    </Table.TextCell>
-                    <Table.TextCell>
-                      {flight.symptoms_onset_date.format("Do MMM YYYY")}
-                    </Table.TextCell>
-                    <Table.TextCell flexBasis={300} flexShrink={0} flexGrow={0}>
-                      {flight.close_contact_rows}
-                    </Table.TextCell>
-                    <Table.TextCell>{flight.reporting_state}</Table.TextCell>
-                  </Table.Row>
-                );
-              })}
-            </Table.Body>
-          </Table>
-        </Pane>
-      </Pane>
-      <Pane
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        flexDirection="column"
-        flex={1}
-      >
-        <Pane alignItems="left" width="80%" marginTop={"0.25rem"}>
-          <Text>
+          <Typography>
             Data Sourced from{" "}
-            <a href="https://www.health.nsw.gov.au/Infectious/diseases/Pages/coronavirus-flights.aspx">
+            <Link href="https://www.health.nsw.gov.au/Infectious/diseases/Pages/coronavirus-flights.aspx">
               NSW Department of Health
-            </a>
+            </Link>
             ,{" "}
-            <a href="https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/health+topics/health+topics+a+-+z/covid+2019/latest+updates/known+flights+with+confirmed+cases+of+covid-19">
+            <Link href="https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/health+topics/health+topics+a+-+z/covid+2019/latest+updates/known+flights+with+confirmed+cases+of+covid-19">
               SA Department of Health
-            </a>
+            </Link>
             ,{" "}
-            <a href="https://healthywa.wa.gov.au/Articles/A_E/Coronavirus/Locations-visited-by-confirmed-cases">
+            <Link href="https://healthywa.wa.gov.au/Articles/A_E/Coronavirus/Locations-visited-by-confirmed-cases">
               WA Department of Health
-            </a>
+            </Link>
             . In addition to media releases by{" "}
-            <a href="https://www.health.act.gov.au/about-our-health-system/novel-coronavirus-covid-19/latest-news">
+            <Link href="https://www.health.act.gov.au/about-our-health-system/novel-coronavirus-covid-19/latest-news">
               ACT Department of Health
-            </a>{" "}
+            </Link>{" "}
             and{" "}
-            <a href="https://www2.health.vic.gov.au/about/media-centre/mediareleases">
+            <Link href="https://www2.health.vic.gov.au/about/media-centre/mediareleases">
               Victorian Department of Health and Human Services.
-            </a>
-          </Text>
-        </Pane>
-        <Pane alignItems width="80%" marginTop="1.25rem">
-          <Text marginBottom={"0.25rem"}>
+            </Link>
+          </Typography>
+        </div>
+        <div style={{ alignItems: "left", width: "80%", marginTop: "0.25rem" }}>
+          <Typography gutterBottom>
             Copyright &copy; Eric Jiang 2020. Made with{" "}
             <span role="img" aria-label="love">
               ❤️
@@ -170,9 +193,9 @@ function App() {
               ☕
             </span>{" "}
             in Melbourne, Victoria, Australia.
-          </Text>
-        </Pane>
-      </Pane>
+          </Typography>
+        </div>
+      </div>
     </div>
   );
 }
