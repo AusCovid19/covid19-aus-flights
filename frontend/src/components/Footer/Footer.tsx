@@ -41,7 +41,8 @@ const Footer: React.FC = () => {
           </Link>
         </Typography>
         <Typography variant="body2" gutterBottom>
-          Copyright &copy; Eric Jiang 2020. Made with{" "}
+          Copyright &copy; <Link href="https://ericjiang.dev">Eric Jiang</Link>{" "}
+          2020. Made with{" "}
           <span role="img" aria-label="love">
             ❤️
           </span>{" "}
