@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import { useApi } from "./hooks/useApi";
-
 import Footer from "./components/Footer";
 import ApplicationBar from "./components/AppBar/AppBar";
 
@@ -10,18 +8,16 @@ import AppTable from "./components/Table";
 
 function App() {
   const [searchString, setSearchString] = useState("");
-  const { handleSearch } = useApi();
 
   const classes = useAppStyles();
   return (
-    <div style={{ height: "100vh", display: "flex", flexDirection: "column" }}>
+    <div className={classes.root}>
       <ApplicationBar
         handleSearch={searchTerm => {
-          console.log(searchTerm);
           setSearchString(searchTerm);
         }}
       />
-      <AppTable searchString={searchString} />
+      <AppTable searchTerm={searchString} />
       <Footer />
     </div>
   );

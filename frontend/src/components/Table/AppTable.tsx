@@ -1,5 +1,7 @@
-import React from "react";
-import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import React, { useEffect, useState } from "react";
+import { Moment } from "moment";
+import Fuse from "fuse.js";
+
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -10,10 +12,14 @@ import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
-import { Flight } from "../../types";
+
 import { useApi } from "../../hooks/useApi";
-import { Moment } from "moment";
 import AirlineTail from "../../airlines/AirlineTail";
+
+import { Flight } from "../../types";
+import { HeadCell, Order, EnhancedTableProps } from "./types";
+
+import useTableStyles from "./styles";
 
 function descendingComparator<T>(a: T, b: T, orderBy: keyof T) {
   if (b[orderBy] < a[orderBy]) {
@@ -24,8 +30,6 @@ function descendingComparator<T>(a: T, b: T, orderBy: keyof T) {
   }
   return 0;
 }
-
-type Order = "asc" | "desc";
 
 function getComparator<Key extends keyof any>(
   order: Order,
@@ -47,13 +51,6 @@ function stableSort<T>(array: T[], comparator: (a: T, b: T) => number) {
     return a[1] - b[1];
   });
   return stabilizedThis.map(el => el[0]);
-}
-
-interface HeadCell {
-  disablePadding: boolean;
-  id: keyof Flight;
-  label: string;
-  numeric: boolean;
 }
 
 const headCells: HeadCell[] = [
@@ -102,18 +99,8 @@ const headCells: HeadCell[] = [
   }
 ];
 
-interface EnhancedTableProps {
-  classes: ReturnType<typeof useStyles>;
-  onRequestSort: (
-    event: React.MouseEvent<unknown>,
-    property: keyof Flight
-  ) => void;
-  order: Order;
-  orderBy: string;
-}
-
 function EnhancedTableHead(props: EnhancedTableProps) {
-  const { classes, order, orderBy, onRequestSort } = props;
+  const { classes, order, orderBy, onRequestSort, searchMode } = props;
   const createSortHandler = (property: keyof Flight) => (
     event: React.MouseEvent<unknown>
   ) => {
@@ -123,67 +110,72 @@ function EnhancedTableHead(props: EnhancedTableProps) {
   return (
     <TableHead>
       <TableRow>
-        {headCells.map(headCell => (
-          <TableCell
-            key={headCell.id}
-            align={headCell.numeric ? "right" : "left"}
-            padding={headCell.disablePadding ? "none" : "default"}
-            sortDirection={orderBy === headCell.id ? order : false}
-          >
-            <TableSortLabel
-              active={orderBy === headCell.id}
-              direction={orderBy === headCell.id ? order : "asc"}
-              onClick={createSortHandler(headCell.id)}
+        {headCells.map(headCell => {
+          const active = orderBy === headCell.id;
+          return (
+            <TableCell
+              key={headCell.id}
+              align={headCell.numeric ? "right" : "left"}
+              padding={headCell.disablePadding ? "none" : "default"}
+              sortDirection={active ? order : false}
             >
-              {headCell.label}
-              {orderBy === headCell.id ? (
-                <span className={classes.visuallyHidden}>
-                  {order === "desc" ? "sorted descending" : "sorted ascending"}
-                </span>
-              ) : null}
-            </TableSortLabel>
-          </TableCell>
-        ))}
+              {searchMode ? (
+                headCell.label
+              ) : (
+                <TableSortLabel
+                  active={active}
+                  direction={active ? order : "asc"}
+                  onClick={createSortHandler(headCell.id)}
+                >
+                  {headCell.label}
+                  {active ? (
+                    <span className={classes.visuallyHidden}>
+                      {order === "desc"
+                        ? "sorted descending"
+                        : "sorted ascending"}
+                    </span>
+                  ) : null}
+                </TableSortLabel>
+              )}
+            </TableCell>
+          );
+        })}
       </TableRow>
     </TableHead>
   );
 }
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      width: "100%",
-      flex: 1,
-      display: "flex",
-      justifyContent: "center"
-    },
-    paper: {
-      width: "80%",
-      marginBottom: theme.spacing(2)
-    },
-    table: {
-      minWidth: 750
-    },
-    visuallyHidden: {
-      border: 0,
-      clip: "rect(0 0 0 0)",
-      height: 1,
-      margin: -1,
-      overflow: "hidden",
-      padding: 0,
-      position: "absolute",
-      top: 20,
-      width: 1
-    }
-  })
-);
+const EnhancedTable: React.FC<{
+  searchTerm: string;
+}> = ({ searchTerm }) => {
+  const classes = useTableStyles();
 
-const EnhancedTable: React.FC<{ searchString: string }> = ({
-  searchString
-}) => {
-  const classes = useStyles();
-
+  const [flightsData, setFlightsData] = useState<Flight[]>([]);
+  const [searchMode, setSearchMode] = useState(false);
   const { data } = useApi();
+
+  useEffect(() => {
+    if (searchTerm === "") {
+      setFlightsData(data);
+      setSearchMode(false);
+    } else {
+      const search = new Fuse(data, {
+        distance: 10,
+        threshold: 0.4,
+        keys: [
+          { name: "destination", weight: 0.9 },
+          { name: "origin", weight: 0.7 },
+          { name: "airline", weight: 0.7 },
+          { name: "flight_number", weight: 0.7 },
+          { name: "reporting_state", weight: 0.4 }
+        ]
+      });
+      const flights = search.search(searchTerm).map((res: any) => res.item);
+      setFlightsData(flights);
+      setSearchMode(true);
+    }
+  }, [data, searchTerm]);
+
   const [order, setOrder] = React.useState<Order>("desc");
   const [orderBy, setOrderBy] = React.useState<keyof Flight>("arrival_date");
   const [page, setPage] = React.useState(0);
@@ -210,7 +202,12 @@ const EnhancedTable: React.FC<{ searchString: string }> = ({
   };
 
   const emptyRows =
-    rowsPerPage - Math.min(rowsPerPage, data.length - page * rowsPerPage);
+    rowsPerPage -
+    Math.min(rowsPerPage, flightsData.length - page * rowsPerPage);
+
+  const displayData = searchMode
+    ? flightsData
+    : stableSort(flightsData, getComparator(order, orderBy));
 
   return (
     <div className={classes.root}>
@@ -228,9 +225,10 @@ const EnhancedTable: React.FC<{ searchString: string }> = ({
               order={order}
               orderBy={orderBy}
               onRequestSort={handleRequestSort}
+              searchMode={searchMode}
             />
             <TableBody>
-              {stableSort(data, getComparator(order, orderBy))
+              {displayData
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 .map((row, index) => {
                   const labelId = `enhanced-table-checkbox-${index}`;
@@ -280,7 +278,7 @@ const EnhancedTable: React.FC<{ searchString: string }> = ({
         <TablePagination
           rowsPerPageOptions={[5, 10, 25]}
           component="div"
-          count={data.length}
+          count={flightsData.length}
           rowsPerPage={rowsPerPage}
           page={page}
           onChangePage={handleChangePage}

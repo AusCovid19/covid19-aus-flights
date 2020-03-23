@@ -12,7 +12,6 @@ import GitHubIcon from "../../icons/GitHub.js";
 import AppBarProps from "./types";
 
 const ApplicationBar: React.FC<AppBarProps> = ({ handleSearch = () => {} }) => {
-  const [searchTerm, setSearchTerm] = useState("");
   const classes = useAppBarStyles();
   return (
     <AppBar position="static">
@@ -21,7 +20,7 @@ const ApplicationBar: React.FC<AppBarProps> = ({ handleSearch = () => {} }) => {
           COVID-19 Australian Flight Tracker
         </Typography>
         <div className={classes.grow} />
-        {/* <div className={classes.search}>
+        <div className={classes.search}>
           <div className={classes.searchIcon}>
             <SearchIcon />
           </div>
@@ -32,17 +31,11 @@ const ApplicationBar: React.FC<AppBarProps> = ({ handleSearch = () => {} }) => {
               input: classes.inputInput
             }}
             inputProps={{ "aria-label": "search" }}
-            value={searchTerm}
             onChange={e => {
-              setSearchTerm(e.target.value as string);
-            }}
-            onKeyDown={e => {
-              if (e.keyCode === 13) {
-                handleSearch(searchTerm);
-              }
+              handleSearch(e.target.value as string);
             }}
           />
-        </div> */}
+        </div>
         <div className={classes.grow} />
         <div>
           <IconButton
