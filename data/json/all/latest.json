@@ -72,7 +72,7 @@
   {
     "airline": "Emirates",
     "arrival_date": "Wed 18 March 2020",
-    "close_contact_rows": "13, 14, 15, 16, 17",
+    "close_contact_rows": "13, 14, 15, 16, 1755, 56, 57, 58, 59",
     "destination": "Sydney",
     "flight_number": "EK414",
     "origin": "Dubai",
@@ -152,7 +152,7 @@
   {
     "airline": "Emirates",
     "arrival_date": "Tue 17 March 2020",
-    "close_contact_rows": "45, 46, 47, 48, 49",
+    "close_contact_rows": "45, 46, 47, 48, 4958, 59, 60, 61, 62",
     "destination": "Sydney",
     "flight_number": "EK414",
     "origin": "Dubai",
@@ -302,7 +302,7 @@
   {
     "airline": "Qantas",
     "arrival_date": "Mon 16 March 2020",
-    "close_contact_rows": "23, 40, 41, 42, 4365, 66, 67, 68, 69",
+    "close_contact_rows": "19, 20, 21, 22, 2340, 41, 42, 4365, 66, 67, 68, 69",
     "destination": "Sydney",
     "flight_number": "QF74",
     "origin": "San Francisco",
@@ -382,7 +382,7 @@
   {
     "airline": "Qatar Airlines",
     "arrival_date": "Mon 16 March 2020",
-    "close_contact_rows": "17, 18, 19, 20, 21",
+    "close_contact_rows": "17, 18, 19, 20, 2141, 42, 43, 44, 45",
     "destination": "Sydney",
     "flight_number": "QR906",
     "origin": "Doha",
@@ -747,6 +747,16 @@
     "flight_number": "TG481",
     "origin": "Bangkok",
     "reporting_state": "WA",
+    "symptoms_onset_date": "Sun 29 March 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Sun 15 March 2020",
+    "close_contact_rows": "22, 23, 24, 25, 26",
+    "destination": "Hamilton Island",
+    "flight_number": "QF866",
+    "origin": "Sydney",
+    "reporting_state": "QLD",
     "symptoms_onset_date": "Sun 29 March 2020"
   },
   {
@@ -1538,6 +1548,16 @@
     "origin": "Los Angeles",
     "reporting_state": "QLD",
     "symptoms_onset_date": "Thu 26 March 2020"
+  },
+  {
+    "airline": "American Airlines",
+    "arrival_date": "Wed 11 March 2020",
+    "close_contact_rows": "20, 21, 22, 2335, 36, 37, 38, 39",
+    "destination": "Sydney",
+    "flight_number": "AA0073",
+    "origin": "Los Angeles",
+    "reporting_state": "NSW",
+    "symptoms_onset_date": "Wed 25 March 2020"
   },
   {
     "airline": "Qantas",
