@@ -452,7 +452,7 @@
   {
     "airline": "QANTAS",
     "arrival_date": "Tue 17 March 2020",
-    "close_contact_rows": "13, 54, 55, 56, 57",
+    "close_contact_rows": "53, 54, 55, 56, 57",
     "destination": "Perth",
     "flight_number": "QF769",
     "origin": "Melbourne",
