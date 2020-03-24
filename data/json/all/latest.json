@@ -80,6 +80,16 @@
     "symptoms_onset_date": "Thu 02 April 2020"
   },
   {
+    "airline": "QANTAS",
+    "arrival_date": "Thu 19 March 2020",
+    "close_contact_rows": "27, 28, 29, 30, 31 and 48. 49, 50, 51, 52",
+    "destination": "Perth",
+    "flight_number": "QF577",
+    "origin": "Sydney",
+    "reporting_state": "WA",
+    "symptoms_onset_date": "Thu 02 April 2020"
+  },
+  {
     "airline": "Jetstar",
     "arrival_date": "Thu 19 March 2020",
     "close_contact_rows": "46, 47, 48",
@@ -346,6 +356,16 @@
     "destination": "Perth",
     "flight_number": "EK0420",
     "origin": "Dubai",
+    "reporting_state": "WA",
+    "symptoms_onset_date": "Tue 31 March 2020"
+  },
+  {
+    "airline": "QANTAS",
+    "arrival_date": "Tue 17 March 2020",
+    "close_contact_rows": "13, 54, 55, 56, 57",
+    "destination": "Perth",
+    "flight_number": "QF769",
+    "origin": "Melbourne",
     "reporting_state": "WA",
     "symptoms_onset_date": "Tue 31 March 2020"
   },
