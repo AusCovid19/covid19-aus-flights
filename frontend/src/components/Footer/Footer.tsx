@@ -24,6 +24,10 @@ const Footer: React.FC = () => {
           <Link href="https://www.qld.gov.au/health/conditions/health-alerts/coronavirus-covid-19/current-status/current-status-and-contact-tracing-alerts">
             Queensland Department of Health
           </Link>{" "}
+          and{" "}
+          <Link href="https://www.health.act.gov.au/about-our-health-system/novel-coronavirus-covid-19/known-flights-act-confirmed-cases-covid-19">
+            ACT Health
+          </Link>
           as part of the{" "}
           <Link href="https://github.com/AusCovid19">
             COVID19 Australian Flights Tracker Project
