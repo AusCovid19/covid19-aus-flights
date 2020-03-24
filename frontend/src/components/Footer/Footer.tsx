@@ -28,10 +28,13 @@ const Footer: React.FC = () => {
           <Link href="https://www.health.act.gov.au/about-our-health-system/novel-coronavirus-covid-19/known-flights-act-confirmed-cases-covid-19">
             ACT Health
           </Link>
-          as part of the{" "}
+          , as part of the{" "}
           <Link href="https://github.com/AusCovid19">
             COVID19 Australian Flights Tracker Project
           </Link>
+          . Powered by <Link href="https://cloud.google.com">Google Cloud</Link>{" "}
+          and{" "}
+          <Link href="https://github.com/features/actions">GitHub Actions</Link>
           .
         </Typography>
         <Typography variant="body2" gutterBottom>
