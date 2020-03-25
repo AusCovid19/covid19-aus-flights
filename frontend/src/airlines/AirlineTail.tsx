@@ -11,6 +11,7 @@ import DL from "./DL.png";
 import EK from "./EK.png";
 import EY from "./EY.png";
 import GA from "./GA.png";
+import JL from "./JL.png";
 import JQ from "./JQ.png";
 import KE from "./KE.png";
 import LA from "./LA.png";
@@ -78,6 +79,8 @@ const AirlineTail: React.FC<{ airline: string }> = ({ airline }) => {
     case "Malindo":
     case "Molinda":
       return <img src={OD} height={height} alt={airline} />;
+    case "JAL":
+      return <img src={JL} height={height} alt={airline} />;
   }
   switch (airline) {
     case "Air New Zealand":
