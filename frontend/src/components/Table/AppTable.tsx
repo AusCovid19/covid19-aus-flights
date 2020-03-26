@@ -276,7 +276,7 @@ const EnhancedTable: React.FC<{
           </Table>
         </TableContainer>
         <TablePagination
-          rowsPerPageOptions={[5, 10, 25]}
+          rowsPerPageOptions={[5, 10, 25, 50]}
           component="div"
           count={flightsData.length}
           rowsPerPage={rowsPerPage}

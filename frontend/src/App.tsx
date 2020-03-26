@@ -12,8 +12,7 @@ import {
 } from "@material-ui/core";
 import { blue, deepOrange } from "@material-ui/core/colors";
 
-function App() {
-  const [searchString, setSearchString] = useState("");
+function AppCore() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const muitheme = createMuiTheme({
     palette: {
@@ -23,20 +22,26 @@ function App() {
     }
   });
 
-  const classes = useAppStyles();
   return (
     <MuiThemeProvider theme={muitheme}>
-      <div className={classes.root}>
-        <ApplicationBar
-          handleSearch={searchTerm => {
-            setSearchString(searchTerm);
-          }}
-        />
-        <AppTable searchTerm={searchString} />
-        <Footer />
-      </div>
+      <App />
     </MuiThemeProvider>
   );
 }
+function App() {
+  const [searchString, setSearchString] = useState("");
+  const classes = useAppStyles();
+  return (
+    <div className={classes.root}>
+      <ApplicationBar
+        handleSearch={searchTerm => {
+          setSearchString(searchTerm);
+        }}
+      />
+      <AppTable searchTerm={searchString} />
+      <Footer />
+    </div>
+  );
+}
 
-export default App;
+export default AppCore;
