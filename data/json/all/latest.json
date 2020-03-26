@@ -74,7 +74,7 @@
     "arrival_date": "Sun 22 March 2020",
     "close_contact_rows": "",
     "destination": "Brisbane",
-    "flight_number": "AC033",
+    "flight_number": "AC035",
     "origin": "Vancouver",
     "reporting_state": "QLD",
     "symptoms_onset_date": "Sun 05 April 2020"
@@ -116,6 +116,26 @@
     "destination": "Canberra",
     "flight_number": "QF814",
     "origin": "Melbourne",
+    "reporting_state": "ACT",
+    "symptoms_onset_date": "Sun 05 April 2020"
+  },
+  {
+    "airline": "Emirates",
+    "arrival_date": "Sun 22 March 2020",
+    "close_contact_rows": "76,77,78,79,80",
+    "destination": "Melbourne",
+    "flight_number": "EK412/QF8412",
+    "origin": "Dubai",
+    "reporting_state": "ACT",
+    "symptoms_onset_date": "Sun 05 April 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Sun 22 March 2020",
+    "close_contact_rows": "16,17,18,19,20",
+    "destination": "Canberra",
+    "flight_number": "QF1419",
+    "origin": "Sydney",
     "reporting_state": "ACT",
     "symptoms_onset_date": "Sun 05 April 2020"
   },
