@@ -1490,7 +1490,7 @@
     "symptoms_onset_date": "Tue 31 March 2020"
   },
   {
-    "airline": "Royal Brunei\u00a0\r\n  Airlines",
+    "airline": "Royal Brunei\u00a0 Airlines",
     "arrival_date": "Tue 17 March 2020",
     "close_contact_rows": "",
     "destination": "Brisbane",
@@ -1530,7 +1530,7 @@
     "symptoms_onset_date": "Tue 31 March 2020"
   },
   {
-    "airline": "Swiss Air/Singapore\r\n  Airlines",
+    "airline": "Swiss Air/Singapore Airlines",
     "arrival_date": "Tue 17 March 2020",
     "close_contact_rows": "",
     "destination": "Brisbane",
@@ -2974,7 +2974,7 @@
     "arrival_date": "Fri 13 March 2020",
     "close_contact_rows": "",
     "destination": "Brisbane",
-    "flight_number": "EK430/\r\n  QF8430",
+    "flight_number": "EK430/ QF8430",
     "origin": "Dubai",
     "reporting_state": "QLD",
     "symptoms_onset_date": "Fri 27 March 2020"
@@ -3194,7 +3194,7 @@
     "arrival_date": "Thu 12 March 2020",
     "close_contact_rows": "",
     "destination": "Brisbane",
-    "flight_number": "QF\r\n  52",
+    "flight_number": "QF 52",
     "origin": "Singapore",
     "reporting_state": "QLD",
     "symptoms_onset_date": "Thu 26 March 2020"
