@@ -1,5 +1,15 @@
 [
   {
+    "airline": "Qantas",
+    "arrival_date": "Thu 26 March 2020",
+    "close_contact_rows": "",
+    "destination": "11:55pm",
+    "flight_number": "QF2",
+    "origin": "London to Darwin",
+    "reporting_state": "NT",
+    "symptoms_onset_date": "Thu 09 April 2020"
+  },
+  {
     "airline": "Emirates",
     "arrival_date": "Tue 24 March 2020",
     "close_contact_rows": "24, 25, 26, 27, 28",
@@ -87,6 +97,16 @@
     "flight_number": "JQ408",
     "origin": "Sydney",
     "reporting_state": "QLD",
+    "symptoms_onset_date": "Mon 06 April 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Mon 23 March 2020",
+    "close_contact_rows": "",
+    "destination": "1:05pm",
+    "flight_number": "QF840",
+    "origin": "Sydney to Darwin",
+    "reporting_state": "NT",
     "symptoms_onset_date": "Mon 06 April 2020"
   },
   {
@@ -207,6 +227,16 @@
     "flight_number": "QF52",
     "origin": "Singapore",
     "reporting_state": "QLD",
+    "symptoms_onset_date": "Sun 05 April 2020"
+  },
+  {
+    "airline": "Jetstar",
+    "arrival_date": "Sun 22 March 2020",
+    "close_contact_rows": "",
+    "destination": "10:36am",
+    "flight_number": "JQ664",
+    "origin": "Melbourne to Yulara",
+    "reporting_state": "NT",
     "symptoms_onset_date": "Sun 05 April 2020"
   },
   {
@@ -357,6 +387,16 @@
     "flight_number": "VA08",
     "origin": "Los Angeles",
     "reporting_state": "QLD",
+    "symptoms_onset_date": "Sat 04 April 2020"
+  },
+  {
+    "airline": "Silk Air",
+    "arrival_date": "Sat 21 March 2020",
+    "close_contact_rows": "",
+    "destination": "3:02pm",
+    "flight_number": "MI801",
+    "origin": "Singapore to Darwin",
+    "reporting_state": "NT",
     "symptoms_onset_date": "Sat 04 April 2020"
   },
   {
@@ -523,7 +563,7 @@
     "airline": "Qantas",
     "arrival_date": "Fri 20 March 2020",
     "close_contact_rows": "",
-    "destination": "1 pm",
+    "destination": "1pm",
     "flight_number": "QF840",
     "origin": "Sydney to Darwin",
     "reporting_state": "NT",
@@ -1003,7 +1043,7 @@
     "airline": "Jetstar",
     "arrival_date": "Thu 19 March 2020",
     "close_contact_rows": "",
-    "destination": "5 am",
+    "destination": "5am",
     "flight_number": "JQ82",
     "origin": "Denpasar to Darwin",
     "reporting_state": "NT",
@@ -1013,7 +1053,7 @@
     "airline": "Qantas",
     "arrival_date": "Thu 19 March 2020",
     "close_contact_rows": "",
-    "destination": "12:30 pm",
+    "destination": "12:30pm",
     "flight_number": "QF824",
     "origin": "Brisbane to Darwin",
     "reporting_state": "NT",
@@ -1023,7 +1063,7 @@
     "airline": "Jetstar",
     "arrival_date": "Thu 19 March 2020",
     "close_contact_rows": "",
-    "destination": "11:30 pm",
+    "destination": "11:30pm",
     "flight_number": "JQ672",
     "origin": "Sydney to Darwin",
     "reporting_state": "NT",
