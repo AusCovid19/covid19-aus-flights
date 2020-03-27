@@ -1,14 +1,20 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect } from "react";
 
 import Footer from "./components/Footer";
 import ApplicationBar from "./components/AppBar/AppBar";
 
 import useAppStyles from "./AppStyles";
 import AppTable from "./components/Table";
-import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
+import {
+  createMuiTheme,
+  MuiThemeProvider,
+  useMediaQuery
+} from "@material-ui/core";
 import { blue, deepOrange } from "@material-ui/core/colors";
-import { UserConfigProvider } from "./providers/UserConfigProvider";
-import { UserConfigContext } from "./contexts/UserConfigContext";
+import UserConfigProvider, {
+  useUserConfigState,
+  useUserConfigDispatch
+} from "./providers/UserConfigProvider";
 
 function AppGlobalState() {
   return (
@@ -19,7 +25,11 @@ function AppGlobalState() {
 }
 
 function AppCore() {
-  const { theme } = useContext(UserConfigContext);
+  const { theme } = useUserConfigState();
+  console.log(theme);
+  const dispatch = useUserConfigDispatch();
+
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const muitheme = createMuiTheme({
     palette: {
       primary: blue,
@@ -27,6 +37,13 @@ function AppCore() {
       type: theme === "dark" ? "dark" : "light"
     }
   });
+
+  useEffect(() => {
+    dispatch({
+      type: "@@USER_CONFIG/SET_THEME",
+      theme: prefersDarkMode ? "dark" : "light"
+    });
+  }, [dispatch, prefersDarkMode]);
 
   return (
     <MuiThemeProvider theme={muitheme}>
