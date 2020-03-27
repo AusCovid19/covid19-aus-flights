@@ -592,7 +592,7 @@
   {
     "airline": "Qantas",
     "arrival_date": "Thu 19 March 2020",
-    "close_contact_rows": "60, 61, 62, 63, 64",
+    "close_contact_rows": "19, 20, 21, 22, 23\u200b60, 61, 62, 63, 64",
     "destination": "Sydney",
     "flight_number": "QF12",
     "origin": "Los Angeles",
@@ -1304,7 +1304,7 @@
     "arrival_date": "Wed 18 March 2020",
     "close_contact_rows": "26, 27, 28, 29, 30",
     "destination": "Perth",
-    "flight_number": "JQ1409",
+    "flight_number": "JQ109",
     "origin": "Denpasar",
     "reporting_state": "WA",
     "symptoms_onset_date": "Wed 01 April 2020"
