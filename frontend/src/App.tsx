@@ -1,24 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 import Footer from "./components/Footer";
 import ApplicationBar from "./components/AppBar/AppBar";
 
 import useAppStyles from "./AppStyles";
 import AppTable from "./components/Table";
-import {
-  createMuiTheme,
-  useMediaQuery,
-  MuiThemeProvider
-} from "@material-ui/core";
+import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
 import { blue, deepOrange } from "@material-ui/core/colors";
+import { UserConfigProvider } from "./providers/UserConfigProvider";
+import { UserConfigContext } from "./contexts/UserConfigContext";
+
+function AppGlobalState() {
+  return (
+    <UserConfigProvider>
+      <AppCore />
+    </UserConfigProvider>
+  );
+}
 
 function AppCore() {
-  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const { theme } = useContext(UserConfigContext);
   const muitheme = createMuiTheme({
     palette: {
       primary: blue,
       secondary: deepOrange,
-      type: prefersDarkMode ? "dark" : "light"
+      type: theme === "dark" ? "dark" : "light"
     }
   });
 
@@ -44,4 +50,4 @@ function App() {
   );
 }
 
-export default AppCore;
+export default AppGlobalState;
