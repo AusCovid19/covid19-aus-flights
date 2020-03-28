@@ -220,6 +220,26 @@
     "symptoms_onset_date": "Sun 05 April 2020"
   },
   {
+    "airline": "Qantas",
+    "arrival_date": "Sun 22 March 2020",
+    "close_contact_rows": "",
+    "destination": "Alice Springs",
+    "flight_number": "QF796",
+    "origin": "Melbourne",
+    "reporting_state": "NT",
+    "symptoms_onset_date": "Sun 05 April 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Sun 22 March 2020",
+    "close_contact_rows": "",
+    "destination": "Darwin",
+    "flight_number": "QF2974",
+    "origin": "Alice Springs",
+    "reporting_state": "NT",
+    "symptoms_onset_date": "Sun 05 April 2020"
+  },
+  {
     "airline": "Jetstar",
     "arrival_date": "Sun 22 March 2020",
     "close_contact_rows": "",
