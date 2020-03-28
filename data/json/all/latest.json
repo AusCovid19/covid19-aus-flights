@@ -270,6 +270,16 @@
     "symptoms_onset_date": "Sun 05 April 2020"
   },
   {
+    "airline": "Singapore Airlines",
+    "arrival_date": "Sun 22 March 2020",
+    "close_contact_rows": "30,31,32,33,34",
+    "destination": "Sydney",
+    "flight_number": "SQ231",
+    "origin": "Singapore",
+    "reporting_state": "ACT",
+    "symptoms_onset_date": "Sun 05 April 2020"
+  },
+  {
     "airline": "Rex",
     "arrival_date": "Sat 21 March 2020",
     "close_contact_rows": "6, 7, 8, 9, 10",
@@ -1670,6 +1680,16 @@
     "symptoms_onset_date": "Wed 01 April 2020"
   },
   {
+    "airline": "Qantas",
+    "arrival_date": "Wed 18 March 2020",
+    "close_contact_rows": "N/A",
+    "destination": "Canberra",
+    "flight_number": "QF812",
+    "origin": "Melbourne",
+    "reporting_state": "ACT",
+    "symptoms_onset_date": "Wed 01 April 2020"
+  },
+  {
     "airline": "FlyCorporate",
     "arrival_date": "Tue 17 March 2020",
     "close_contact_rows": "9, 10, 11, 12, 13",
@@ -2066,6 +2086,16 @@
     "destination": "Canberra",
     "flight_number": "VA640",
     "origin": "Sydney",
+    "reporting_state": "ACT",
+    "symptoms_onset_date": "Tue 31 March 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Tue 17 March 2020",
+    "close_contact_rows": "12,13,14,15,16",
+    "destination": "Melbourne",
+    "flight_number": "QF46",
+    "origin": "Bali",
     "reporting_state": "ACT",
     "symptoms_onset_date": "Tue 31 March 2020"
   },
