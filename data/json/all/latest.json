@@ -11,6 +11,16 @@
   },
   {
     "airline": "Qantas",
+    "arrival_date": "Fri 27 March 2020",
+    "close_contact_rows": "",
+    "destination": "Darwin",
+    "flight_number": "QF840",
+    "origin": "Sydney",
+    "reporting_state": "NT",
+    "symptoms_onset_date": "Fri 10 April 2020"
+  },
+  {
+    "airline": "Qantas",
     "arrival_date": "Thu 26 March 2020",
     "close_contact_rows": "",
     "destination": "Darwin",
