@@ -1,5 +1,15 @@
 [
   {
+    "airline": "QANTAS",
+    "arrival_date": "Fri 27 March 2020",
+    "close_contact_rows": "1, 2, 3, 4",
+    "destination": "Perth",
+    "flight_number": "QF475",
+    "origin": "Melbourne",
+    "reporting_state": "WA",
+    "symptoms_onset_date": "Fri 10 April 2020"
+  },
+  {
     "airline": "Qantas",
     "arrival_date": "Fri 27 March 2020",
     "close_contact_rows": "",
@@ -83,16 +93,6 @@
     "airline": "Qantas",
     "arrival_date": "Wed 25 March 2020",
     "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF759",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Wed 08 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Wed 25 March 2020",
-    "close_contact_rows": "",
     "destination": "Brisbane",
     "flight_number": "QF508",
     "origin": "Sydney",
@@ -137,6 +137,16 @@
     "flight_number": "QF408",
     "origin": "Melbourne",
     "reporting_state": "NSW",
+    "symptoms_onset_date": "Tue 07 April 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Tue 24 March 2020",
+    "close_contact_rows": "",
+    "destination": "Adelaide",
+    "flight_number": "QF675",
+    "origin": "Melbourne",
+    "reporting_state": "SA",
     "symptoms_onset_date": "Tue 07 April 2020"
   },
   {
@@ -242,7 +252,7 @@
   {
     "airline": "Qantas",
     "arrival_date": "Mon 23 March 2020",
-    "close_contact_rows": "15, 16, 17, 18, 19, 20",
+    "close_contact_rows": "15, 16, 17, 18, 19, 20, 27, 28, 29, 30, 31",
     "destination": "Sydney",
     "flight_number": "QF414",
     "origin": "Melbourne",
@@ -257,6 +267,16 @@
     "flight_number": "VA935",
     "origin": "Sydney",
     "reporting_state": "NSW",
+    "symptoms_onset_date": "Mon 06 April 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Mon 23 March 2020",
+    "close_contact_rows": "",
+    "destination": "Adelaide",
+    "flight_number": "QF741",
+    "origin": "Sydney",
+    "reporting_state": "SA",
     "symptoms_onset_date": "Mon 06 April 2020"
   },
   {
@@ -406,6 +426,16 @@
     "destination": "Sydney",
     "flight_number": "VA992",
     "origin": "Brisbane",
+    "reporting_state": "NSW",
+    "symptoms_onset_date": "Sun 05 April 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Sun 22 March 2020",
+    "close_contact_rows": "10, 11, 12, 13, 14",
+    "destination": "Brisbane",
+    "flight_number": "QF556",
+    "origin": "Sydney",
     "reporting_state": "NSW",
     "symptoms_onset_date": "Sun 05 April 2020"
   },
@@ -740,13 +770,13 @@
     "symptoms_onset_date": "Sat 04 April 2020"
   },
   {
-    "airline": "Qantas",
+    "airline": "Rex",
     "arrival_date": "Sat 21 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF761",
+    "close_contact_rows": "7, 8, 9, 10, 11",
+    "destination": "Narrandera",
+    "flight_number": "ZL463",
     "origin": "Sydney",
-    "reporting_state": "SA",
+    "reporting_state": "NSW",
     "symptoms_onset_date": "Sat 04 April 2020"
   },
   {
@@ -987,26 +1017,6 @@
     "flight_number": "VA917",
     "origin": "Sydney",
     "reporting_state": "NSW",
-    "symptoms_onset_date": "Fri 03 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 20 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF761",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Fri 03 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 20 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF741",
-    "origin": "Sydney",
-    "reporting_state": "SA",
     "symptoms_onset_date": "Fri 03 April 2020"
   },
   {
@@ -1350,86 +1360,6 @@
     "symptoms_onset_date": "Thu 02 April 2020"
   },
   {
-    "airline": "Jetstar",
-    "arrival_date": "Thu 19 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "JQ768",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Thu 02 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Thu 19 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF759",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Thu 02 April 2020"
-  },
-  {
-    "airline": "Virgin Australia",
-    "arrival_date": "Thu 19 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "VA428",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Thu 02 April 2020"
-  },
-  {
-    "airline": "Jetstar",
-    "arrival_date": "Thu 19 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "JQ764",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Thu 02 April 2020"
-  },
-  {
-    "airline": "Virgin Australia",
-    "arrival_date": "Thu 19 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "VA436",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Thu 02 April 2020"
-  },
-  {
-    "airline": "Virgin Australia",
-    "arrival_date": "Thu 19 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "VA418",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Thu 02 April 2020"
-  },
-  {
-    "airline": "Virgin Australia",
-    "arrival_date": "Thu 19 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "VA249",
-    "origin": "Melbourne",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Thu 02 April 2020"
-  },
-  {
-    "airline": "Virgin Australia",
-    "arrival_date": "Thu 19 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "VA444",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Thu 02 April 2020"
-  },
-  {
     "airline": "Qantas",
     "arrival_date": "Thu 19 March 2020",
     "close_contact_rows": "",
@@ -1506,6 +1436,16 @@
     "destination": "Melbourne",
     "flight_number": "VA838",
     "origin": "Sydney",
+    "reporting_state": "SA",
+    "symptoms_onset_date": "Thu 02 April 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Thu 19 March 2020",
+    "close_contact_rows": "",
+    "destination": "Adelaide",
+    "flight_number": "QF683",
+    "origin": "Melbourne",
     "reporting_state": "SA",
     "symptoms_onset_date": "Thu 02 April 2020"
   },
@@ -1645,6 +1585,16 @@
     "close_contact_rows": "35, 36, 37, 38, 39",
     "destination": "Perth",
     "flight_number": "VA557",
+    "origin": "Sydney",
+    "reporting_state": "WA",
+    "symptoms_onset_date": "Thu 02 April 2020"
+  },
+  {
+    "airline": "QANTAS",
+    "arrival_date": "Thu 19 March 2020",
+    "close_contact_rows": "2, 3, 4, 5, 6",
+    "destination": "Perth",
+    "flight_number": "QF581",
     "origin": "Sydney",
     "reporting_state": "WA",
     "symptoms_onset_date": "Thu 02 April 2020"
@@ -2180,36 +2130,6 @@
     "symptoms_onset_date": "Wed 01 April 2020"
   },
   {
-    "airline": "Qantas",
-    "arrival_date": "Wed 18 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF783",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Wed 01 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Wed 18 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF759",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Wed 01 April 2020"
-  },
-  {
-    "airline": "Virgin Australia",
-    "arrival_date": "Wed 18 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "VA243",
-    "origin": "Melbourne",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Wed 01 April 2020"
-  },
-  {
     "airline": "Virgin Australia",
     "arrival_date": "Wed 18 March 2020",
     "close_contact_rows": "",
@@ -2683,36 +2603,6 @@
     "airline": "Virgin Australia",
     "arrival_date": "Tue 17 March 2020",
     "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "VA437",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Tue 31 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Tue 17 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF759",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Tue 31 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Tue 17 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF677",
-    "origin": "Melbourne",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Tue 31 March 2020"
-  },
-  {
-    "airline": "Virgin Australia",
-    "arrival_date": "Tue 17 March 2020",
-    "close_contact_rows": "",
     "destination": "Sydney",
     "flight_number": "VA437",
     "origin": "Adelaide",
@@ -3150,46 +3040,6 @@
     "symptoms_onset_date": "Mon 30 March 2020"
   },
   {
-    "airline": "Qantas",
-    "arrival_date": "Mon 16 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF761",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Mon 30 March 2020"
-  },
-  {
-    "airline": "Virgin Australia",
-    "arrival_date": "Mon 16 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "VA213",
-    "origin": "Melbourne",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Mon 30 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Mon 16 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF675",
-    "origin": "Melbourne",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Mon 30 March 2020"
-  },
-  {
-    "airline": "Virgin Australia",
-    "arrival_date": "Mon 16 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "VA211",
-    "origin": "Melbourne",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Mon 30 March 2020"
-  },
-  {
     "airline": "Virgin Australia",
     "arrival_date": "Mon 16 March 2020",
     "close_contact_rows": "",
@@ -3226,6 +3076,36 @@
     "destination": "Adelaide",
     "flight_number": "QF675",
     "origin": "Melbourne",
+    "reporting_state": "SA",
+    "symptoms_onset_date": "Mon 30 March 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Mon 16 March 2020",
+    "close_contact_rows": "",
+    "destination": "Adelaide",
+    "flight_number": "QF675",
+    "origin": "Melbourne",
+    "reporting_state": "SA",
+    "symptoms_onset_date": "Mon 30 March 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Mon 16 March 2020",
+    "close_contact_rows": "",
+    "destination": "Adelaide",
+    "flight_number": "QF692",
+    "origin": "Melbourne",
+    "reporting_state": "SA",
+    "symptoms_onset_date": "Mon 30 March 2020"
+  },
+  {
+    "airline": "Jetstar",
+    "arrival_date": "Mon 16 March 2020",
+    "close_contact_rows": "",
+    "destination": "Adelaide",
+    "flight_number": "JQ766",
+    "origin": "Sydney",
     "reporting_state": "SA",
     "symptoms_onset_date": "Mon 30 March 2020"
   },
@@ -3243,7 +3123,7 @@
     "airline": "Air New Zealand",
     "arrival_date": "Mon 16 March 2020",
     "close_contact_rows": "22, 23, 24, 25, 26, 27",
-    "destination": "PerthArriving 15:40",
+    "destination": "Perth - Arriving 15:40",
     "flight_number": "NZ175",
     "origin": "Auckland",
     "reporting_state": "WA",
@@ -3253,7 +3133,7 @@
     "airline": "QANTAS",
     "arrival_date": "Mon 16 March 2020",
     "close_contact_rows": "1, 2, 3, 4, 5",
-    "destination": "PerthArriving 12:20",
+    "destination": "Perth - Arriving 12:20",
     "flight_number": "QF581",
     "origin": "Sydney",
     "reporting_state": "WA",
@@ -3397,36 +3277,6 @@
     "flight_number": "VA932",
     "origin": "Brisbane",
     "reporting_state": "NSW",
-    "symptoms_onset_date": "Sun 29 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Sun 15 March 2020",
-    "close_contact_rows": "",
-    "destination": "Sydney",
-    "flight_number": "QF751",
-    "origin": "Adelaide",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Sun 29 March 2020"
-  },
-  {
-    "airline": "Jetstar",
-    "arrival_date": "Sun 15 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "JQ453",
-    "origin": "Gold Coast",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Sun 29 March 2020"
-  },
-  {
-    "airline": "Emirates Airlines",
-    "arrival_date": "Sun 15 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "EK440",
-    "origin": "Dubai",
-    "reporting_state": "SA",
     "symptoms_onset_date": "Sun 29 March 2020"
   },
   {
@@ -3600,86 +3450,6 @@
     "symptoms_onset_date": "Fri 27 March 2020"
   },
   {
-    "airline": "Qantas",
-    "arrival_date": "Fri 13 March 2020",
-    "close_contact_rows": "",
-    "destination": "Sydney",
-    "flight_number": "QF20",
-    "origin": "Manila",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Fri 27 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 13 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF739",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Fri 27 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 13 March 2020",
-    "close_contact_rows": "",
-    "destination": "Melbourne",
-    "flight_number": "QF50",
-    "origin": "San Francisco",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Fri 27 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 13 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF679",
-    "origin": "Melbourne",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Fri 27 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 13 March 2020",
-    "close_contact_rows": "",
-    "destination": "Melbourne",
-    "flight_number": "QF94",
-    "origin": "Los Angeles",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Fri 27 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 13 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF685",
-    "origin": "Melbourne",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Fri 27 March 2020"
-  },
-  {
-    "airline": "Air New Zealand",
-    "arrival_date": "Fri 13 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "NZ191",
-    "origin": "Auckland",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Fri 27 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 13 March 2020",
-    "close_contact_rows": "",
-    "destination": "Whyalla",
-    "flight_number": "QF2701",
-    "origin": "Adelaide",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Fri 27 March 2020"
-  },
-  {
     "airline": "Emirates",
     "arrival_date": "Fri 13 March 2020",
     "close_contact_rows": "8, 9, 10, 11, 12 & 62, 63, 64, 65, 66",
@@ -3693,7 +3463,7 @@
     "airline": "Qatar Airways",
     "arrival_date": "Fri 13 March 2020",
     "close_contact_rows": "40, 41, 42, 43, 44 & 78, 79, 80, 81, 82, 83",
-    "destination": "PerthArriving 18:25",
+    "destination": "Perth - Arriving 18:25",
     "flight_number": "QR900",
     "origin": "Doha",
     "reporting_state": "WA",
@@ -3717,16 +3487,6 @@
     "flight_number": "VA838",
     "origin": "Sydney",
     "reporting_state": "NSW",
-    "symptoms_onset_date": "Thu 26 March 2020"
-  },
-  {
-    "airline": "Jetstar",
-    "arrival_date": "Thu 12 March 2020",
-    "close_contact_rows": "",
-    "destination": "Gold Coast",
-    "flight_number": "JQ452",
-    "origin": "Adelaide",
-    "reporting_state": "SA",
     "symptoms_onset_date": "Thu 26 March 2020"
   },
   {
@@ -3780,26 +3540,6 @@
     "symptoms_onset_date": "Wed 25 March 2020"
   },
   {
-    "airline": "Qantas",
-    "arrival_date": "Wed 11 March 2020",
-    "close_contact_rows": "",
-    "destination": "Sydney",
-    "flight_number": "QF12",
-    "origin": "Los Angeles",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Wed 25 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Wed 11 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF741",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Wed 25 March 2020"
-  },
-  {
     "airline": "Singapore Airlines",
     "arrival_date": "Wed 11 March 2020",
     "close_contact_rows": "45, 46, 47, 48, 49",
@@ -3837,36 +3577,6 @@
     "flight_number": "VA1141",
     "origin": "Sydney",
     "reporting_state": "NSW",
-    "symptoms_onset_date": "Tue 24 March 2020"
-  },
-  {
-    "airline": "Ethiad Airways",
-    "arrival_date": "Tue 10 March 2020",
-    "close_contact_rows": "",
-    "destination": "Sydney",
-    "flight_number": "EY450",
-    "origin": "Abu Dhabi",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Tue 24 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Tue 10 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF663",
-    "origin": "Brisbane",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Tue 24 March 2020"
-  },
-  {
-    "airline": "Virgin Australia",
-    "arrival_date": "Tue 10 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "VA418",
-    "origin": "Sydney",
-    "reporting_state": "SA",
     "symptoms_onset_date": "Tue 24 March 2020"
   },
   {
