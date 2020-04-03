@@ -610,16 +610,6 @@
     "symptoms_onset_date": "Sun 05 April 2020"
   },
   {
-    "airline": "Qantas",
-    "arrival_date": "Sun 22 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF741",
-    "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Sun 05 April 2020"
-  },
-  {
     "airline": "QANTAS",
     "arrival_date": "Sun 22 March 2020",
     "close_contact_rows": "1, 2, 3, 4, 5",
@@ -1204,6 +1194,16 @@
     "arrival_date": "Fri 20 March 2020",
     "close_contact_rows": "",
     "destination": "Adelaide",
+    "flight_number": "QF683",
+    "origin": "Melbourne",
+    "reporting_state": "SA",
+    "symptoms_onset_date": "Fri 03 April 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Fri 20 March 2020",
+    "close_contact_rows": "",
+    "destination": "Adelaide",
     "flight_number": "QF761",
     "origin": "Sydney",
     "reporting_state": "SA",
@@ -1576,16 +1576,6 @@
     "destination": "Melbourne",
     "flight_number": "VA838",
     "origin": "Sydney",
-    "reporting_state": "SA",
-    "symptoms_onset_date": "Thu 02 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Thu 19 March 2020",
-    "close_contact_rows": "",
-    "destination": "Adelaide",
-    "flight_number": "QF683",
-    "origin": "Melbourne",
     "reporting_state": "SA",
     "symptoms_onset_date": "Thu 02 April 2020"
   },
