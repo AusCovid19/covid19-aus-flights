@@ -40,6 +40,26 @@
     "symptoms_onset_date": "Sat 11 April 2020"
   },
   {
+    "airline": "Qantas",
+    "arrival_date": "Fri 27 March 2020",
+    "close_contact_rows": "All seats",
+    "destination": "Sunshine Coast (Maroochydore)",
+    "flight_number": "QF1580",
+    "origin": "Sydney",
+    "reporting_state": "NSW",
+    "symptoms_onset_date": "Fri 10 April 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Fri 27 March 2020",
+    "close_contact_rows": "All seats",
+    "destination": "Sydney",
+    "flight_number": "QF1581",
+    "origin": "Sunshine Coast(Maroochydore)",
+    "reporting_state": "NSW",
+    "symptoms_onset_date": "Fri 10 April 2020"
+  },
+  {
     "airline": "QANTAS",
     "arrival_date": "Fri 27 March 2020",
     "close_contact_rows": "1, 2, 3, 4",
@@ -162,20 +182,30 @@
   {
     "airline": "Qantas",
     "arrival_date": "Wed 25 March 2020",
-    "close_contact_rows": "10, 11, 12, 13, 14",
-    "destination": "Wagga",
-    "flight_number": "QF2229",
-    "origin": "Sydney",
+    "close_contact_rows": "26, 27, 28, 29, 30, 3134, 35, 36, 37, 38",
+    "destination": "Sydney",
+    "flight_number": "QF566",
+    "origin": "Perth",
     "reporting_state": "NSW",
     "symptoms_onset_date": "Wed 08 April 2020"
   },
   {
     "airline": "Qantas",
     "arrival_date": "Wed 25 March 2020",
-    "close_contact_rows": "26, 27, 28, 29, 30, 3134, 35, 36, 37, 38",
+    "close_contact_rows": "33, 34, 35, 36, 37",
     "destination": "Sydney",
-    "flight_number": "QF566",
+    "flight_number": "QF582",
     "origin": "Perth",
+    "reporting_state": "NSW",
+    "symptoms_onset_date": "Wed 08 April 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Wed 25 March 2020",
+    "close_contact_rows": "10, 11, 12, 13, 14",
+    "destination": "Wagga",
+    "flight_number": "QF2229",
+    "origin": "Sydney",
     "reporting_state": "NSW",
     "symptoms_onset_date": "Wed 08 April 2020"
   },
@@ -376,6 +406,16 @@
     "destination": "Avalon",
     "flight_number": "JQ604",
     "origin": "Sydney",
+    "reporting_state": "NSW",
+    "symptoms_onset_date": "Mon 06 April 2020"
+  },
+  {
+    "airline": "Jetstar",
+    "arrival_date": "Mon 23 March 2020",
+    "close_contact_rows": "1, 2, 3",
+    "destination": "Sydney",
+    "flight_number": "JQ606",
+    "origin": "Melbourne",
     "reporting_state": "NSW",
     "symptoms_onset_date": "Mon 06 April 2020"
   },
@@ -1205,7 +1245,7 @@
     "close_contact_rows": "8, 9, 10, 11, 12",
     "destination": "Albury",
     "flight_number": "QF2213",
-    "origin": "Sydney",
+    "origin": "S\u200b\u200bydney",
     "reporting_state": "NSW",
     "symptoms_onset_date": "Fri 03 April 2020"
   },
