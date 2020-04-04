@@ -31,16 +31,6 @@
   },
   {
     "airline": "Qantas",
-    "arrival_date": "Sat 28 March 2020",
-    "close_contact_rows": "",
-    "destination": "Brisbane",
-    "flight_number": "QF528",
-    "origin": "Sydney",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Sat 11 April 2020"
-  },
-  {
-    "airline": "Qantas",
     "arrival_date": "Fri 27 March 2020",
     "close_contact_rows": "All seats",
     "destination": "Sunshine Coast (Maroochydore)",
