@@ -310,6 +310,16 @@
     "symptoms_onset_date": "Tue 07 April 2020"
   },
   {
+    "airline": "Air New Zealand",
+    "arrival_date": "Tue 24 March 2020",
+    "close_contact_rows": "37, 38, 39, 40, 41",
+    "destination": "Perth",
+    "flight_number": "NZ175",
+    "origin": "Auckland",
+    "reporting_state": "WA",
+    "symptoms_onset_date": "Tue 07 April 2020"
+  },
+  {
     "airline": "Emirates",
     "arrival_date": "Tue 24 March 2020",
     "close_contact_rows": "",
