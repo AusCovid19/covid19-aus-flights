@@ -1652,6 +1652,16 @@
   {
     "airline": "Qantas",
     "arrival_date": "Wed 18 March 2020",
+    "close_contact_rows": "12,13,14,15,16",
+    "destination": "Melbourne",
+    "flight_number": "QF46",
+    "origin": "Bali",
+    "reporting_state": "ACT",
+    "symptoms_onset_date": "Wed 01 April 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Wed 18 March 2020",
     "close_contact_rows": "54,55,56,57,58",
     "destination": "Sydney",
     "flight_number": "QF74",
@@ -1682,7 +1692,7 @@
   {
     "airline": "Qantas",
     "arrival_date": "Wed 18 March 2020",
-    "close_contact_rows": "N/A",
+    "close_contact_rows": "20,21,22,23,24",
     "destination": "Canberra",
     "flight_number": "QF812",
     "origin": "Melbourne",
@@ -1802,6 +1812,16 @@
   {
     "airline": "Qantas",
     "arrival_date": "Tue 17 March 2020",
+    "close_contact_rows": "62,63,64,65,66",
+    "destination": "Melbourne",
+    "flight_number": "QF36",
+    "origin": "Singapore",
+    "reporting_state": "ACT",
+    "symptoms_onset_date": "Tue 31 March 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Tue 17 March 2020",
     "close_contact_rows": "71,72,73,74,75",
     "destination": "Melbourne",
     "flight_number": "QF94",
@@ -1836,16 +1856,6 @@
     "destination": "Canberra",
     "flight_number": "QR906",
     "origin": "Doha (via Sydney)",
-    "reporting_state": "ACT",
-    "symptoms_onset_date": "Tue 31 March 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Tue 17 March 2020",
-    "close_contact_rows": "12,13,14,15,16",
-    "destination": "Melbourne",
-    "flight_number": "QF46",
-    "origin": "Bali",
     "reporting_state": "ACT",
     "symptoms_onset_date": "Tue 31 March 2020"
   },
@@ -2030,16 +2040,6 @@
     "symptoms_onset_date": "Mon 30 March 2020"
   },
   {
-    "airline": "Qantas",
-    "arrival_date": "Mon 16 March 2020",
-    "close_contact_rows": "56,57,58,59,60",
-    "destination": "Melbourne",
-    "flight_number": "QF36",
-    "origin": "Singapore",
-    "reporting_state": "ACT",
-    "symptoms_onset_date": "Mon 30 March 2020"
-  },
-  {
     "airline": "Jetstar",
     "arrival_date": "Sun 15 March 2020",
     "close_contact_rows": "",
@@ -2180,16 +2180,6 @@
     "symptoms_onset_date": "Thu 26 March 2020"
   },
   {
-    "airline": "Qantas",
-    "arrival_date": "Thu 12 March 2020",
-    "close_contact_rows": "90,91,92,93,94",
-    "destination": "Sydney",
-    "flight_number": "QF42",
-    "origin": "Jakarta",
-    "reporting_state": "ACT",
-    "symptoms_onset_date": "Thu 26 March 2020"
-  },
-  {
     "airline": "QANTAS",
     "arrival_date": "Wed 11 March 2020",
     "close_contact_rows": "38, 39, 40, 41, 42",
@@ -2207,6 +2197,16 @@
     "flight_number": "SQ225",
     "origin": "Singapore",
     "reporting_state": "WA",
+    "symptoms_onset_date": "Wed 25 March 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Wed 11 March 2020",
+    "close_contact_rows": "90,91,92,93,94",
+    "destination": "Sydney",
+    "flight_number": "QF42",
+    "origin": "Jakarta",
+    "reporting_state": "ACT",
     "symptoms_onset_date": "Wed 25 March 2020"
   },
   {
