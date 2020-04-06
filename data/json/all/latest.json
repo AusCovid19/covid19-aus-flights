@@ -41,6 +41,16 @@
   },
   {
     "airline": "Qantas",
+    "arrival_date": "Sat 28 March 2020",
+    "close_contact_rows": "",
+    "destination": "Darwin",
+    "flight_number": "QF840",
+    "origin": "Sydney",
+    "reporting_state": "NT",
+    "symptoms_onset_date": "Sat 11 April 2020"
+  },
+  {
+    "airline": "Qantas",
     "arrival_date": "Fri 27 March 2020",
     "close_contact_rows": "All rows",
     "destination": "Sunshine Coast (Maroochydore)",
@@ -884,7 +894,7 @@
     "arrival_date": "Sun 22 March 2020",
     "close_contact_rows": "79,80,81,82,83",
     "destination": "Melbourne",
-    "flight_number": "QF8406",
+    "flight_number": "QF8406/EK406",
     "origin": "Dubai",
     "reporting_state": "ACT",
     "symptoms_onset_date": "Sun 05 April 2020"
@@ -1670,6 +1680,16 @@
     "symptoms_onset_date": "Wed 01 April 2020"
   },
   {
+    "airline": "Virgin Australia",
+    "arrival_date": "Wed 18 March 2020",
+    "close_contact_rows": "3,4,5,6,7",
+    "destination": "Canberra",
+    "flight_number": "VA640",
+    "origin": "Sydney",
+    "reporting_state": "ACT",
+    "symptoms_onset_date": "Wed 01 April 2020"
+  },
+  {
     "airline": "Etihad",
     "arrival_date": "Wed 18 March 2020",
     "close_contact_rows": "42,43,44,45,46",
@@ -1684,7 +1704,7 @@
     "arrival_date": "Wed 18 March 2020",
     "close_contact_rows": "24,25,26,27,28",
     "destination": "Sydney",
-    "flight_number": "QF8412",
+    "flight_number": "QF8412/EK412",
     "origin": "Dubai",
     "reporting_state": "ACT",
     "symptoms_onset_date": "Wed 01 April 2020"
@@ -1896,16 +1916,6 @@
     "destination": "Sydney",
     "flight_number": "VA134",
     "origin": "Christchurch",
-    "reporting_state": "ACT",
-    "symptoms_onset_date": "Tue 31 March 2020"
-  },
-  {
-    "airline": "Virgin Australia",
-    "arrival_date": "Tue 17 March 2020",
-    "close_contact_rows": "3,4,5,6,7",
-    "destination": "Canberra",
-    "flight_number": "VA640",
-    "origin": "Sydney",
     "reporting_state": "ACT",
     "symptoms_onset_date": "Tue 31 March 2020"
   },
