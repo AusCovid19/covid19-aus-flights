@@ -530,6 +530,16 @@
     "symptoms_onset_date": "Sun 05 April 2020"
   },
   {
+    "airline": "QANTAS",
+    "arrival_date": "Sun 22 March 2020",
+    "close_contact_rows": "15, 16, 17, 18, 19",
+    "destination": "Kalgoorlie",
+    "flight_number": "QF1606",
+    "origin": "Perth",
+    "reporting_state": "WA",
+    "symptoms_onset_date": "Sun 05 April 2020"
+  },
+  {
     "airline": "Qantas",
     "arrival_date": "Sun 22 March 2020",
     "close_contact_rows": "",
@@ -1426,6 +1436,16 @@
     "destination": "Perth",
     "flight_number": "QF10",
     "origin": "London",
+    "reporting_state": "WA",
+    "symptoms_onset_date": "Tue 31 March 2020"
+  },
+  {
+    "airline": "Virgin",
+    "arrival_date": "Tue 17 March 2020",
+    "close_contact_rows": "23, 24, 25, 26, 27",
+    "destination": "Perth",
+    "flight_number": "VA769",
+    "origin": "Melbourne",
     "reporting_state": "WA",
     "symptoms_onset_date": "Tue 31 March 2020"
   },
