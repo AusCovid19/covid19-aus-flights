@@ -313,56 +313,6 @@
     "airline": "Qantas",
     "arrival_date": "Wed 25 March 2020",
     "close_contact_rows": "",
-    "destination": "Brisbane",
-    "flight_number": "QF652",
-    "origin": "Perth",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Wed 08 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Wed 25 March 2020",
-    "close_contact_rows": "",
-    "destination": "Brisbane",
-    "flight_number": "QF508",
-    "origin": "Sydney",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Wed 08 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Wed 25 March 2020",
-    "close_contact_rows": "",
-    "destination": "Brisbane",
-    "flight_number": "QF530",
-    "origin": "Sydney",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Wed 08 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Wed 25 March 2020",
-    "close_contact_rows": "",
-    "destination": "Townsville",
-    "flight_number": "QF1792",
-    "origin": "Brisbane",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Wed 08 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Wed 25 March 2020",
-    "close_contact_rows": "",
-    "destination": "Brisbane",
-    "flight_number": "QF594",
-    "origin": "Perth",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Wed 08 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Wed 25 March 2020",
-    "close_contact_rows": "",
     "destination": "Darwin",
     "flight_number": "QF838",
     "origin": "Melbourne",
