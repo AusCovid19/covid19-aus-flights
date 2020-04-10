@@ -40,6 +40,16 @@
     "symptoms_onset_date": "Wed 15 April 2020"
   },
   {
+    "airline": "Qantas",
+    "arrival_date": "Mon 30 March 2020",
+    "close_contact_rows": "All rows",
+    "destination": "Sydney",
+    "flight_number": "QF588",
+    "origin": "Coolongatta",
+    "reporting_state": "NSW",
+    "symptoms_onset_date": "Mon 13 April 2020"
+  },
+  {
     "airline": "Qatar",
     "arrival_date": "Mon 30 March 2020",
     "close_contact_rows": "17, 18, 19, 20, 21",
@@ -190,16 +200,6 @@
     "symptoms_onset_date": "Fri 10 April 2020"
   },
   {
-    "airline": "Qantas",
-    "arrival_date": "Thu 26 March 2020",
-    "close_contact_rows": "15, 16, 17, 18, 19",
-    "destination": "Brisbane",
-    "flight_number": "QF520",
-    "origin": "Sydney",
-    "reporting_state": "NSW",
-    "symptoms_onset_date": "Thu 09 April 2020"
-  },
-  {
     "airline": "QANTAS",
     "arrival_date": "Thu 26 March 2020",
     "close_contact_rows": "51, 52, 53, 54, 55",
@@ -258,36 +258,6 @@
     "origin": "London",
     "reporting_state": "NT",
     "symptoms_onset_date": "Thu 09 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Wed 25 March 2020",
-    "close_contact_rows": "10, 11, 12, 13, 14",
-    "destination": "Wagga",
-    "flight_number": "QF2229",
-    "origin": "Sydney",
-    "reporting_state": "NSW",
-    "symptoms_onset_date": "Wed 08 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Wed 25 March 2020",
-    "close_contact_rows": "26, 27, 28, 29, 30, 3134, 35, 36, 37, 38",
-    "destination": "Sydney",
-    "flight_number": "QF566",
-    "origin": "Perth",
-    "reporting_state": "NSW",
-    "symptoms_onset_date": "Wed 08 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Wed 25 March 2020",
-    "close_contact_rows": "33, 34, 35, 36, 37",
-    "destination": "Sydney",
-    "flight_number": "QF582",
-    "origin": "Perth",
-    "reporting_state": "NSW",
-    "symptoms_onset_date": "Wed 08 April 2020"
   },
   {
     "airline": "Emirates",
