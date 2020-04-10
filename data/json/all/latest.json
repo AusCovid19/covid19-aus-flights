@@ -21,6 +21,16 @@
   },
   {
     "airline": "Qantas",
+    "arrival_date": "Fri 03 April 2020",
+    "close_contact_rows": "",
+    "destination": "Darwin",
+    "flight_number": "QF840",
+    "origin": "Sydney",
+    "reporting_state": "NT",
+    "symptoms_onset_date": "Fri 17 April 2020"
+  },
+  {
+    "airline": "Qantas",
     "arrival_date": "Thu 02 April 2020",
     "close_contact_rows": "All    rows",
     "destination": "Sydney",
@@ -37,6 +47,16 @@
     "flight_number": "QF840",
     "origin": "Sydney",
     "reporting_state": "NSW",
+    "symptoms_onset_date": "Wed 15 April 2020"
+  },
+  {
+    "airline": "Qantas",
+    "arrival_date": "Wed 01 April 2020",
+    "close_contact_rows": "",
+    "destination": "Darwin",
+    "flight_number": "QF840",
+    "origin": "Sydney",
+    "reporting_state": "NT",
     "symptoms_onset_date": "Wed 15 April 2020"
   },
   {
@@ -207,46 +227,6 @@
     "flight_number": "QF10",
     "origin": "London",
     "reporting_state": "WA",
-    "symptoms_onset_date": "Thu 09 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Thu 26 March 2020",
-    "close_contact_rows": "",
-    "destination": "Brisbane",
-    "flight_number": "QF540",
-    "origin": "Sydney",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Thu 09 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Thu 26 March 2020",
-    "close_contact_rows": "",
-    "destination": "Brisbane",
-    "flight_number": "QF604",
-    "origin": "Melbourne",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Thu 09 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Thu 26 March 2020",
-    "close_contact_rows": "",
-    "destination": "Brisbane",
-    "flight_number": "QF520",
-    "origin": "Sydney",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Thu 09 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Thu 26 March 2020",
-    "close_contact_rows": "",
-    "destination": "Brisbane",
-    "flight_number": "QF516",
-    "origin": "Sydney",
-    "reporting_state": "QLD",
     "symptoms_onset_date": "Thu 09 April 2020"
   },
   {
