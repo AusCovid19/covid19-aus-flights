@@ -163,46 +163,6 @@
     "airline": "Qantas",
     "arrival_date": "Fri 27 March 2020",
     "close_contact_rows": "",
-    "destination": "Townsville",
-    "flight_number": "QF1788",
-    "origin": "Brisbane",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Fri 10 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 27 March 2020",
-    "close_contact_rows": "",
-    "destination": "Brisbane",
-    "flight_number": "QF516",
-    "origin": "Sydney",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Fri 10 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 27 March 2020",
-    "close_contact_rows": "",
-    "destination": "Brisbane",
-    "flight_number": "QF512",
-    "origin": "Sydney",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Fri 10 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 27 March 2020",
-    "close_contact_rows": "",
-    "destination": "Brisbane",
-    "flight_number": "QF654",
-    "origin": "Perth",
-    "reporting_state": "QLD",
-    "symptoms_onset_date": "Fri 10 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 27 March 2020",
-    "close_contact_rows": "",
     "destination": "Darwin",
     "flight_number": "QF840",
     "origin": "Sydney",
@@ -256,6 +216,16 @@
     "destination": "Perth",
     "flight_number": "VA691",
     "origin": "Melbourne",
+    "reporting_state": "WA",
+    "symptoms_onset_date": "Wed 08 April 2020"
+  },
+  {
+    "airline": "Qatar",
+    "arrival_date": "Wed 25 March 2020",
+    "close_contact_rows": "26, 27, 28, 29, 30",
+    "destination": "Perth",
+    "flight_number": "QR900",
+    "origin": "Doha",
     "reporting_state": "WA",
     "symptoms_onset_date": "Wed 08 April 2020"
   },
@@ -336,6 +306,36 @@
     "destination": "Perth",
     "flight_number": "VA685",
     "origin": "Melbourne",
+    "reporting_state": "WA",
+    "symptoms_onset_date": "Mon 06 April 2020"
+  },
+  {
+    "airline": "QANTAS",
+    "arrival_date": "Mon 23 March 2020",
+    "close_contact_rows": "1, 2, 3, 4",
+    "destination": "Kalgoorlie",
+    "flight_number": "QF1610",
+    "origin": "Perth",
+    "reporting_state": "WA",
+    "symptoms_onset_date": "Mon 06 April 2020"
+  },
+  {
+    "airline": "Emirates",
+    "arrival_date": "Mon 23 March 2020",
+    "close_contact_rows": "44, 45, 46, 47, 48, 49",
+    "destination": "Perth",
+    "flight_number": "EK420",
+    "origin": "Dubai",
+    "reporting_state": "WA",
+    "symptoms_onset_date": "Mon 06 April 2020"
+  },
+  {
+    "airline": "QANTAS",
+    "arrival_date": "Mon 23 March 2020",
+    "close_contact_rows": "78, 79, 80, 81, 82",
+    "destination": "Perth",
+    "flight_number": "QF8420",
+    "origin": "Dubai",
     "reporting_state": "WA",
     "symptoms_onset_date": "Mon 06 April 2020"
   },
@@ -1656,6 +1656,16 @@
     "destination": "Perth",
     "flight_number": "EK0420",
     "origin": "Dubai",
+    "reporting_state": "WA",
+    "symptoms_onset_date": "Sat 28 March 2020"
+  },
+  {
+    "airline": "Jetstar",
+    "arrival_date": "Sat 14 March 2020",
+    "close_contact_rows": "2, 3, 4, 5, 6",
+    "destination": "Perth",
+    "flight_number": "JQ107",
+    "origin": "Denpasar",
     "reporting_state": "WA",
     "symptoms_onset_date": "Sat 28 March 2020"
   },
