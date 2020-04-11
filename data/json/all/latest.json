@@ -1560,11 +1560,11 @@
     "symptoms_onset_date": "Mon 30 March 2020"
   },
   {
-    "airline": "Air Canada",
+    "airline": "Virgin",
     "arrival_date": "Mon 16 March 2020",
     "close_contact_rows": "1, 2, 3, 4, 5",
     "destination": "Perth",
-    "flight_number": "AC2740",
+    "flight_number": "VA466",
     "origin": "Brisbane",
     "reporting_state": "WA",
     "symptoms_onset_date": "Mon 30 March 2020"
