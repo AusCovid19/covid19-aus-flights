@@ -2,7 +2,7 @@
   {
     "airline": "Qantas",
     "arrival_date": "Sat 04 April 2020",
-    "close_contact_rows": "All    rows",
+    "close_contact_rows": "All rows",
     "destination": "Sydney",
     "flight_number": "QF843",
     "origin": "Darwin",
@@ -10,9 +10,9 @@
     "symptoms_onset_date": "Sat 18 April 2020"
   },
   {
-    "airline": "Qantas",
+    "airline": "Qant\u200b\u200bas",
     "arrival_date": "Fri 03 April 2020",
-    "close_contact_rows": "All    rows",
+    "close_contact_rows": "All rows",
     "destination": "Darwin",
     "flight_number": "QF840",
     "origin": "Sydney",
@@ -32,7 +32,7 @@
   {
     "airline": "Qantas",
     "arrival_date": "Thu 02 April 2020",
-    "close_contact_rows": "All    rows",
+    "close_contact_rows": "All rows",
     "destination": "Sydney",
     "flight_number": "QF843",
     "origin": "Darwin",
@@ -42,7 +42,7 @@
   {
     "airline": "Qantas",
     "arrival_date": "Wed 01 April 2020",
-    "close_contact_rows": "All    rows",
+    "close_contact_rows": "All rows",
     "destination": "Darwin",
     "flight_number": "QF840",
     "origin": "Sydney",
@@ -128,26 +128,6 @@
     "origin": "Sydney",
     "reporting_state": "NT",
     "symptoms_onset_date": "Sat 11 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 27 March 2020",
-    "close_contact_rows": "All rows",
-    "destination": "Sunshine Coast    (Maroochydore)",
-    "flight_number": "QF1580",
-    "origin": "Sydney",
-    "reporting_state": "NSW",
-    "symptoms_onset_date": "Fri 10 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 27 March 2020",
-    "close_contact_rows": "All rows",
-    "destination": "Sydney",
-    "flight_number": "QF1581",
-    "origin": "Sunshine Coast    (Maroochydore)",
-    "reporting_state": "NSW",
-    "symptoms_onset_date": "Fri 10 April 2020"
   },
   {
     "airline": "QANTAS",
