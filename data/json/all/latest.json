@@ -60,16 +60,6 @@
     "symptoms_onset_date": "Wed 15 April 2020"
   },
   {
-    "airline": "Qantas",
-    "arrival_date": "Mon 30 March 2020",
-    "close_contact_rows": "All rows",
-    "destination": "Sydney",
-    "flight_number": "QF588",
-    "origin": "Coolongatta",
-    "reporting_state": "NSW",
-    "symptoms_onset_date": "Mon 13 April 2020"
-  },
-  {
     "airline": "Qatar",
     "arrival_date": "Mon 30 March 2020",
     "close_contact_rows": "17, 18, 19, 20, 21",
@@ -80,16 +70,6 @@
     "symptoms_onset_date": "Mon 13 April 2020"
   },
   {
-    "airline": "Rex",
-    "arrival_date": "Sun 29 March 2020",
-    "close_contact_rows": "2, 3, 4, 5, 6",
-    "destination": "Sydney",
-    "flight_number": "ZL472",
-    "origin": "Griffith",
-    "reporting_state": "NSW",
-    "symptoms_onset_date": "Sun 12 April 2020"
-  },
-  {
     "airline": "Qatar",
     "arrival_date": "Sun 29 March 2020",
     "close_contact_rows": "20, 21, 22, 23, 24 and 26, 27, 28, 29, 30 and 32, 33, 34, 35, 36",
@@ -98,16 +78,6 @@
     "origin": "Doha",
     "reporting_state": "WA",
     "symptoms_onset_date": "Sun 12 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Sat 28 March 2020",
-    "close_contact_rows": "20, 21, 22, 23, 24",
-    "destination": "Brisbane",
-    "flight_number": "QF528",
-    "origin": "Sydney",
-    "reporting_state": "NSW",
-    "symptoms_onset_date": "Sat 11 April 2020"
   },
   {
     "airline": "Qatar",
