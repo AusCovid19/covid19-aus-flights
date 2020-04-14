@@ -120,16 +120,6 @@
     "symptoms_onset_date": "Sat 11 April 2020"
   },
   {
-    "airline": "Qantas",
-    "arrival_date": "Sat 28 March 2020",
-    "close_contact_rows": "17, 18, 19, 20, 21",
-    "destination": "Darwin",
-    "flight_number": "QF840",
-    "origin": "Sydney",
-    "reporting_state": "NT",
-    "symptoms_onset_date": "Sat 11 April 2020"
-  },
-  {
     "airline": "QANTAS",
     "arrival_date": "Fri 27 March 2020",
     "close_contact_rows": "1, 2, 3, 4",
@@ -137,16 +127,6 @@
     "flight_number": "QF475",
     "origin": "Melbourne",
     "reporting_state": "WA",
-    "symptoms_onset_date": "Fri 10 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 27 March 2020",
-    "close_contact_rows": "17, 18, 19, 20, 21",
-    "destination": "Darwin",
-    "flight_number": "QF840",
-    "origin": "Sydney",
-    "reporting_state": "NT",
     "symptoms_onset_date": "Fri 10 April 2020"
   },
   {
@@ -167,16 +147,6 @@
     "flight_number": "QF10",
     "origin": "London",
     "reporting_state": "WA",
-    "symptoms_onset_date": "Thu 09 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Thu 26 March 2020",
-    "close_contact_rows": "17, 18, 19, 20, 21",
-    "destination": "Darwin",
-    "flight_number": "QF2",
-    "origin": "London",
-    "reporting_state": "NT",
     "symptoms_onset_date": "Thu 09 April 2020"
   },
   {
@@ -217,16 +187,6 @@
     "flight_number": "QR900",
     "origin": "Doha",
     "reporting_state": "WA",
-    "symptoms_onset_date": "Wed 08 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Wed 25 March 2020",
-    "close_contact_rows": "17, 18, 19, 20, 21",
-    "destination": "Darwin",
-    "flight_number": "QF838",
-    "origin": "Melbourne",
-    "reporting_state": "NT",
     "symptoms_onset_date": "Wed 08 April 2020"
   },
   {
@@ -307,16 +267,6 @@
     "flight_number": "QF8420",
     "origin": "Dubai",
     "reporting_state": "WA",
-    "symptoms_onset_date": "Mon 06 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Mon 23 March 2020",
-    "close_contact_rows": "17, 18, 19, 20, 21",
-    "destination": "Darwin",
-    "flight_number": "QF840",
-    "origin": "Sydney",
-    "reporting_state": "NT",
     "symptoms_onset_date": "Mon 06 April 2020"
   },
   {
@@ -407,36 +357,6 @@
     "flight_number": "QF1606",
     "origin": "Perth",
     "reporting_state": "WA",
-    "symptoms_onset_date": "Sun 05 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Sun 22 March 2020",
-    "close_contact_rows": "17, 18, 19, 20, 21",
-    "destination": "Alice Springs",
-    "flight_number": "QF796",
-    "origin": "Melbourne",
-    "reporting_state": "NT",
-    "symptoms_onset_date": "Sun 05 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Sun 22 March 2020",
-    "close_contact_rows": "17, 18, 19, 20, 21",
-    "destination": "Darwin",
-    "flight_number": "QF2974",
-    "origin": "Alice Springs",
-    "reporting_state": "NT",
-    "symptoms_onset_date": "Sun 05 April 2020"
-  },
-  {
-    "airline": "Jetstar",
-    "arrival_date": "Sun 22 March 2020",
-    "close_contact_rows": "17, 18, 19, 20, 21",
-    "destination": "Yulara",
-    "flight_number": "JQ664",
-    "origin": "Melbourne",
-    "reporting_state": "NT",
     "symptoms_onset_date": "Sun 05 April 2020"
   },
   {
