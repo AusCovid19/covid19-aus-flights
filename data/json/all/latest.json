@@ -134,7 +134,7 @@
     "arrival_date": "Wed 25 March 2020",
     "close_contact_rows": "23, 24, 25, 26, 27",
     "destination": "Perth",
-    "flight_number": "EK0420",
+    "flight_number": "EK420",
     "origin": "Dubai",
     "reporting_state": "WA",
     "symptoms_onset_date": "Wed 08 April 2020"
@@ -442,9 +442,9 @@
   {
     "airline": "Emirates",
     "arrival_date": "Sat 21 March 2020",
-    "close_contact_rows": "53, 54, 55, 56, 57 and 80, 81, 82, 83, 84",
+    "close_contact_rows": "43, 44, 45, 46, 4, and 53, 54, 55, 56, 57 and 80, 81, 82, 83, 84",
     "destination": "Perth",
-    "flight_number": "EK0420",
+    "flight_number": "EK420",
     "origin": "Dubai",
     "reporting_state": "WA",
     "symptoms_onset_date": "Sat 04 April 2020"
@@ -594,7 +594,7 @@
     "arrival_date": "Fri 20 March 2020",
     "close_contact_rows": "13, 14, 15, 16, 17",
     "destination": "Perth",
-    "flight_number": "EK0420",
+    "flight_number": "EK420",
     "origin": "Dubai",
     "reporting_state": "WA",
     "symptoms_onset_date": "Fri 03 April 2020"
@@ -874,7 +874,7 @@
     "arrival_date": "Thu 19 March 2020",
     "close_contact_rows": "2, 3, 4, 5, 6 & 62, 63, 64, 65, 66",
     "destination": "Perth",
-    "flight_number": "EK0420",
+    "flight_number": "EK420",
     "origin": "Dubai",
     "reporting_state": "WA",
     "symptoms_onset_date": "Thu 02 April 2020"
@@ -1332,9 +1332,9 @@
   {
     "airline": "Emirates",
     "arrival_date": "Tue 17 March 2020",
-    "close_contact_rows": "44, 45, 46, 47, 48 & 51, 52, 53, 54, 55 & 82, 83, 84,85, 86",
+    "close_contact_rows": "44, 45, 46, 47, 48 & 51, 52, 53, 54, 55 & 71, 72, 73, 74, 75 & 82, 83, 84,85, 86",
     "destination": "Perth",
-    "flight_number": "EK0420",
+    "flight_number": "EK420",
     "origin": "Dubai",
     "reporting_state": "WA",
     "symptoms_onset_date": "Tue 31 March 2020"
@@ -1346,16 +1346,6 @@
     "destination": "Perth",
     "flight_number": "QF769",
     "origin": "Melbourne",
-    "reporting_state": "WA",
-    "symptoms_onset_date": "Tue 31 March 2020"
-  },
-  {
-    "airline": "Emirates",
-    "arrival_date": "Tue 17 March 2020",
-    "close_contact_rows": "71, 72, 73, 74, 75",
-    "destination": "Perth",
-    "flight_number": "EK0420",
-    "origin": "Dubai",
     "reporting_state": "WA",
     "symptoms_onset_date": "Tue 31 March 2020"
   },
@@ -1734,7 +1724,7 @@
     "arrival_date": "Sat 14 March 2020",
     "close_contact_rows": "16, 17, 18, 19, 20, 21",
     "destination": "Perth",
-    "flight_number": "EK0420",
+    "flight_number": "EK420",
     "origin": "Dubai",
     "reporting_state": "WA",
     "symptoms_onset_date": "Sat 28 March 2020"
@@ -1844,7 +1834,7 @@
     "arrival_date": "Fri 13 March 2020",
     "close_contact_rows": "8, 9, 10, 11, 12 & 62, 63, 64, 65, 66",
     "destination": "Perth",
-    "flight_number": "EK0420",
+    "flight_number": "EK420",
     "origin": "Dubai",
     "reporting_state": "WA",
     "symptoms_onset_date": "Fri 27 March 2020"
@@ -2054,7 +2044,7 @@
     "arrival_date": "Sun 08 March 2020",
     "close_contact_rows": "45, 46, 47, 48, 49",
     "destination": "Perth",
-    "flight_number": "EK0420",
+    "flight_number": "EK420",
     "origin": "Dubai",
     "reporting_state": "WA",
     "symptoms_onset_date": "Sun 22 March 2020"
