@@ -222,7 +222,7 @@
   {
     "airline": "Emirates",
     "arrival_date": "Mon 23 March 2020",
-    "close_contact_rows": "44, 45, 46, 47, 48, 49",
+    "close_contact_rows": "44, 45, 46, 47, 48, 49 and 80, 81, 82, 83, 84",
     "destination": "Perth",
     "flight_number": "EK420",
     "origin": "Dubai",
@@ -912,7 +912,7 @@
   {
     "airline": "Virgin",
     "arrival_date": "Thu 19 March 2020",
-    "close_contact_rows": "14, 15, 16, 17, 18, 29, 30, 31, 32, 33, 38, 39, 40, 41, 42",
+    "close_contact_rows": "9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 29, 30, 31, 32, 33, 38, 39, 40, 41, 42",
     "destination": "Perth",
     "flight_number": "VA559",
     "origin": "Sydney",
