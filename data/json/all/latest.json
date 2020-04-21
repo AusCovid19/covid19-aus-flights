@@ -1,6 +1,16 @@
 [
   {
     "airline": "Qantas",
+    "arrival_date": "Thu 09 April 2020",
+    "close_contact_rows": "7-11",
+    "destination": "Sydney",
+    "flight_number": "QF470",
+    "origin": "Melbourne",
+    "reporting_state": "NSW",
+    "symptoms_onset_date": "Thu 23 April 2020"
+  },
+  {
+    "airline": "Qantas",
     "arrival_date": "Sat 04 April 2020",
     "close_contact_rows": "All rows",
     "destination": "Sydney",
