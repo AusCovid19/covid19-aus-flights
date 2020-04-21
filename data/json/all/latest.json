@@ -10,23 +10,13 @@
     "symptoms_onset_date": "Sat 18 April 2020"
   },
   {
-    "airline": "Qant\u200b\u200bas",
+    "airline": "Qantas",
     "arrival_date": "Fri 03 April 2020",
     "close_contact_rows": "All rows",
     "destination": "Darwin",
     "flight_number": "QF840",
     "origin": "Sydney",
     "reporting_state": "NSW",
-    "symptoms_onset_date": "Fri 17 April 2020"
-  },
-  {
-    "airline": "Qantas",
-    "arrival_date": "Fri 03 April 2020",
-    "close_contact_rows": "17, 18, 19, 20, 21",
-    "destination": "Darwin",
-    "flight_number": "QF840",
-    "origin": "Sydney",
-    "reporting_state": "NT",
     "symptoms_onset_date": "Fri 17 April 2020"
   },
   {
