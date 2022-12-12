@@ -27,7 +27,7 @@
   "dependencies": {
     "concurrently": "^5.1.0",
     "evergreen-ui": "^4.23.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fuse.js": "^5.0.7-beta",
     "helmet": "^3.21.3",
     "moment": "^2.24.0"
